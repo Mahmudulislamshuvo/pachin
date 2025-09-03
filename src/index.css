@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #ff5e14;
+  --color-text-White: #fff;
+  --color-text-Primary: #041436;
+  --color-text-Secondary: #676e7c;
+  --color-text-black: #000;
+  --color-bannerLayer: rgba(65, 65, 65, 0.74);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
