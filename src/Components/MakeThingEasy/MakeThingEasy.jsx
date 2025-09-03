@@ -61,7 +61,7 @@ const MakeThingEasy = () => {
             </ol>
           </div>
         </div>
-        <div className="bg-background p-8 flex justify-between absolute -bottom-20 left-0 w-full">
+        <div className="bg-background p-8 flex justify-between absolute -bottom-20 left-0 w-full z-10">
           <div className="bg-text-White flex justify-center items-center gap-x-5 p-5">
             <span>
               <LuMedal className="h-10 w-10 text-background" />

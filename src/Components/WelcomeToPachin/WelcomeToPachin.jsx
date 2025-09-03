@@ -1,19 +1,18 @@
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import { LuHandshake } from "react-icons/lu";
+import PageHeader from "../CommonComponents/PageHeader";
 
 const WelcomeToPachin = () => {
   return (
     <div className="container">
-      <div>
-        <div className="text-center space-y-5">
-          <h2 className="text-text-Primary text-5xl font-bold">
-            Welcome to Pachin Ltd.
-          </h2>
-          <p className="text-text-Secondary text-lg px-60">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard
-          </p>
+      <div className="py-20">
+        <div>
+          <PageHeader
+            title="Welcome to Pachin Ltd."
+            desc=" Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard"
+          />
         </div>
 
         <div className="mt-8">
