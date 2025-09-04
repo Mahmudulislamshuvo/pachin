@@ -1,4 +1,5 @@
 import Banner from "./Components/Banner/Banner";
+import ContactUs from "./Components/ContactUs/ContactUs";
 import Discover from "./Components/Discover/Discover";
 import MakeThingEasy from "./Components/MakeThingEasy/MakeThingEasy";
 import MeatOurTeam from "./Components/MeetOurTeam/MeatOurTeam";
@@ -7,6 +8,7 @@ import OurServices from "./Components/ourServices/OurServices";
 import SuccessGlance from "./Components/SuccessInaGlance/SuccessGlance";
 import TopProjects from "./Components/TopProjects/TopProjects";
 import WelcomeToPachin from "./Components/WelcomeToPachin/WelcomeToPachin";
+import WhyWeAreBest from "./Components/WhyWeAreBest/WhyWeAreBest";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
       <SuccessGlance />
       <Discover />
       <MeatOurTeam />
+      <WhyWeAreBest />
+      <ContactUs />
     </div>
   );
 };
