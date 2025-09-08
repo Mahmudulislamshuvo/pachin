@@ -7,6 +7,10 @@
   --color-text-Secondary: #676e7c;
   --color-text-black: #000;
   --color-bannerLayer: rgba(65, 65, 65, 0.74);
+  --color-bg-input: #f7f7f8;
+
+  /* Shadow */
+  --color-shadowSection: rgba(0, _0, _0, _0.1);
 }
 
 .container {

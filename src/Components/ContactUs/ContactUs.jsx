@@ -1,44 +1,83 @@
 const ContactUs = () => {
+  // handle form submit
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px] dark:bg-dark">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap lg:justify-between">
+        <div className="flex justify-between">
           {/* Left Side - Form */}
-          <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-            <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12 dark:bg-dark-2">
-              <form>
-                <div className="mb-6">
+          {/* =======================Todo: Shadow saved color can't be use========== */}
+          <div
+            className={`w-[55%] px-10 py-15 bg-text-White shadow-[-8px_8px_10px_rgba(0,_0,_0,_0.1)]`}
+          >
+            <div className="relative rounded-lg bg-text-White dark:bg-dark-2">
+              <div className="pb-10">
+                <h4 className="text-3xl text-text-Primary font-bold">
+                  Request A Quote
+                </h4>
+                <p className="text-lg text-text-Secondary pt-3">
+                  Lorem Ipsum is simply dummy text.
+                </p>
+              </div>
+
+              <form onSubmit={(e) => handleSubmit(e)}>
+                {/* name */}
+                <div className="flex justify-between gap-x-5">
                   <input
                     type="text"
-                    placeholder="Your Name"
-                    className="w-full rounded-sm border border-stroke px-[14px] py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                    placeholder="Full Name"
+                    className="w-full rounded-sm px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow"
                   />
-                </div>
-                <div className="mb-6">
+
                   <input
                     type="email"
-                    placeholder="Your Email"
-                    className="w-full rounded-sm border border-stroke px-[14px] py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                    placeholder="Phone Number"
+                    className="w-full rounded-sm px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow"
                   />
                 </div>
-                <div className="mb-6">
+                <div className="flex justify-between gap-x-5 mt-5">
                   <input
                     type="text"
-                    placeholder="Your Phone"
-                    className="w-full rounded-sm border border-stroke px-[14px] py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                    placeholder="Email Address"
+                    className="w-full rounded-sm px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    className="w-full rounded-sm px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow"
                   />
                 </div>
-                <div className="mb-6">
-                  <textarea
-                    rows="6"
-                    placeholder="Your Message"
-                    className="w-full resize-none rounded-sm border border-stroke px-[14px] py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-                  ></textarea>
-                </div>
                 <div>
+                  <div className="my-5">
+                    <textarea
+                      rows="6"
+                      placeholder="Your Message"
+                      className="w-full rounded-sm px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow"
+                    ></textarea>
+                  </div>
+                </div>
+                <div className="flex justify-between items-center">
+                  <div className="space-x-2">
+                    <input
+                      name="checkbox"
+                      id="checkbox"
+                      type="checkbox"
+                      //     className="w-5 h-5 appearance-none border-2 border-gray-400 rounded-sm
+                      //  checked:border-black checked:bg-black
+                      //  focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50
+                      //  transition-colors duration-200 focus:outline-hidden"
+                    />
+                    <label htmlFor="checkbox" className="text-text-Primary">
+                      Also subscribe us
+                    </label>
+                  </div>
                   <button
                     type="submit"
-                    className="w-full rounded-sm border border-primary bg-primary p-3 text-white transition hover:bg-primary/90"
+                    className="bg-primary py-3 px-5 transition bg-background rounded-full text-text-White text-lg"
                   >
                     Send Message
                   </button>
@@ -47,7 +86,7 @@ const ContactUs = () => {
             </div>
           </div>
           {/* Right Side - Contact Info */}
-          <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
+          <div className="w-[45%] px-8 py-10 bg-background text-text-White">
             <div className="mb-12 max-w-[570px] lg:mb-0">
               <span className="mb-4 block text-base font-semibold text-primary">
                 Contact Us
