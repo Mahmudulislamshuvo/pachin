@@ -1,4 +1,5 @@
 import Banner from "./Components/Banner/Banner";
+import ClientsFeadback from "./Components/ClientsFeadback/ClientsFeadback";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Discover from "./Components/Discover/Discover";
 import MakeThingEasy from "./Components/MakeThingEasy/MakeThingEasy";
@@ -25,6 +26,7 @@ const App = () => {
       <MeatOurTeam />
       <WhyWeAreBest />
       <ContactUs />
+      <ClientsFeadback />
     </div>
   );
 };
