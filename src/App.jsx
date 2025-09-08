@@ -1,4 +1,5 @@
 import Banner from "./Components/Banner/Banner";
+import Blog from "./Components/Blog/Blog";
 import ClientsFeadback from "./Components/ClientsFeadback/ClientsFeadback";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Discover from "./Components/Discover/Discover";
@@ -27,6 +28,7 @@ const App = () => {
       <WhyWeAreBest />
       <ContactUs />
       <ClientsFeadback />
+      <Blog />
     </div>
   );
 };
