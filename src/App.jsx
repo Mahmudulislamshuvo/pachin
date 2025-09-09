@@ -3,6 +3,7 @@ import Blog from "./Components/Blog/Blog";
 import ClientsFeadback from "./Components/ClientsFeadback/ClientsFeadback";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Discover from "./Components/Discover/Discover";
+import Footer from "./Components/Footer/Footer";
 import MakeThingEasy from "./Components/MakeThingEasy/MakeThingEasy";
 import MeatOurTeam from "./Components/MeetOurTeam/MeatOurTeam";
 import Navbar from "./Components/Navbar/Navbar";
@@ -29,6 +30,7 @@ const App = () => {
       <ContactUs />
       <ClientsFeadback />
       <Blog />
+      <Footer />
     </div>
   );
 };
