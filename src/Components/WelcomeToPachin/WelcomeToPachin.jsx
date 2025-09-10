@@ -6,7 +6,7 @@ import PageHeader from "../CommonComponents/PageHeader";
 const WelcomeToPachin = () => {
   return (
     <div className="container">
-      <div className="py-20">
+      <div className="py-15 md:py-20">
         <div>
           <PageHeader
             title="Welcome to Pachin Ltd."
@@ -19,8 +19,8 @@ const WelcomeToPachin = () => {
           <div className="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
             <div className="relative flex flex-col md:flex-row items-center">
               {/* Hobby */}
-              <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg md:-mr-4">
-                <div className="bg-text-Primary rounded-lg overflow-hidden py-15">
+              <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-5 md:my-8 relative rounded-lg">
+                <div className="bg-text-Primary rounded-lg overflow-hidden py-5 md:py-20">
                   <div className="text-center flex flex-col items-center justify-center p-6">
                     <LuHandshake className="h-20 w-20 text-background" />
                     <h3 className="text-text-White text-2xl font-bold">
@@ -34,9 +34,9 @@ const WelcomeToPachin = () => {
                 </div>
               </div>
 
-              {/* Expert */}
-              <div className="w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg">
-                <div className="bg-background rounded-lg overflow-hidden py-20">
+              {/* Expert (middle one) */}
+              <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 my-5 md:my-8 sm:my-5 relative rounded-lg bg-text-Primary md:bg-white md:shadow-lg md:z-10">
+                <div className="bg-background md:bg-background rounded-lg overflow-hidden py-5 md:py-20">
                   <div className="text-center flex flex-col items-center justify-center p-6">
                     <HiOutlineLightBulb className="h-20 w-20 text-text-White" />
                     <h3 className="text-text-White text-2xl font-bold">
@@ -51,8 +51,8 @@ const WelcomeToPachin = () => {
               </div>
 
               {/* Enterprise */}
-              <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg md:-mr-4">
-                <div className="bg-text-Primary rounded-lg overflow-hidden py-15">
+              <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-5 md:my-8 relative rounded-lg">
+                <div className="bg-text-Primary rounded-lg overflow-hidden py-5 md:py-20">
                   <div className="text-center flex flex-col items-center justify-center p-6">
                     <IoCheckmarkCircleOutline className="h-20 w-20 text-background" />
                     <h3 className="text-text-White text-2xl font-bold">
