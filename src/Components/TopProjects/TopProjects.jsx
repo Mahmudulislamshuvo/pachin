@@ -81,6 +81,10 @@ const TopProjects = () => {
             slidesPerView={1}
             spaceBetween={10}
             loop={true}
+            // autoplay={{
+            //   delay: 3000,
+            //   disableOnInteraction: false,
+            // }}
             breakpoints={{
               640: {
                 slidesPerView: 2,

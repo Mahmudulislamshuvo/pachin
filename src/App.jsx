@@ -16,8 +16,9 @@ import WhyWeAreBest from "./Components/WhyWeAreBest/WhyWeAreBest";
 const App = () => {
   return (
     <div>
-      {/* <div className="sticky top-0 z-50"></div> */}
-      <Navbar />
+      <div className="sticky top-0 z-50">
+        <Navbar />
+      </div>
       <Banner />
       <WelcomeToPachin />
       <MakeThingEasy />

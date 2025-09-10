@@ -12,12 +12,13 @@ const Banner = () => {
         {/* Overlay Layer */}
         <div className="absolute top-0 left-0 w-full h-full bg-bannerLayer">
           <div className="container">
-            <div className="text-center pt-100">
-              <h1 className="text-text-White text-6xl font-bold">
+            <div className="text-center py-40 md:py-100 px-5 md:px-0">
+              <h1 className="text-text-White text-2xl md:text-6xl font-bold px-6 md:px-0">
                 Trusted Factory Solutions
+                <br className="sm:hidden" />
                 <span className="text-background pl-3">Since 1995</span>
               </h1>
-              <p className="text-text-White pt-8 px-40">
+              <p className="text-text-White pt-4 px-5 md:pt-8 md:px-40">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown.
