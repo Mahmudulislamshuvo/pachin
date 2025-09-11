@@ -51,7 +51,7 @@ const OurServices = () => {
   ];
 
   return (
-    <div className="relative w-full h-[130vh]">
+    <div className="relative w-full md:h-[130vh] px-5 md:px-0">
       {/* Background image layer */}
       <img
         src="https://images.pexels.com/photos/31750956/pexels-photo-31750956.jpeg"
@@ -63,7 +63,7 @@ const OurServices = () => {
       <div className="absolute inset-0 bg-bannerLayer bg-opacity-50"></div>
 
       {/* Content layer */}
-      <div className="relative z-10 container h-full py-50">
+      <div className="relative z-10 container h-full py-20 md:py-50">
         <div className="pb-10">
           <PageHeader
             title="Our Services"
@@ -74,10 +74,10 @@ const OurServices = () => {
           />
         </div>
         <div className="flex flex-wrap gap-10 justify-center">
-          {servicesData.map((service, index) => (
+          {servicesData.map((service) => (
             <div
-              key={index}
-              className="bg-text-White rounded-xl py-10 w-[30%] group transition-colors duration-300 hover:bg-background"
+              key={service.id}
+              className=" rounded-xl py-10 w-full sm:w-full md:w-[30%] group transition-colors duration-300 hover:bg-background bg-text-White"
             >
               <div className="p-5 flex flex-col items-center justify-center transition-colors duration-300 group-hover:text-text-White rounded-xl">
                 {/* dynamically handled Icons and color */}
