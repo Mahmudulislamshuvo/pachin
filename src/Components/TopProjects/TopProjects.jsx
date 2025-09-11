@@ -68,8 +68,8 @@ const TopProjects = () => {
 
   return (
     <div>
-      <div className="py-40">
-        <div className="px-85 pb-10">
+      <div className="py-20 md:py-40">
+        <div className="px-5 md:px-85 pb-10">
           <PageHeader
             title="Welcome to Pachin Ltd."
             desc=" Lorem Ipsum is simply dummy text of the printing and typesetting
