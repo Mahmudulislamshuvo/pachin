@@ -42,7 +42,7 @@ const MeatOurTeam = () => {
         </div>
 
         {/* Team Card */}
-        <div className="flex gap-5 justify-between items-center">
+        <div className="md:flex md:gap-5 md:justify-between md:items-center space-y-5 md:space-y-0">
           {teamMembers.map((member) => (
             <div
               key={member.id}

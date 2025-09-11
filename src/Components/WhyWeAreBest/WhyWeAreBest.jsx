@@ -38,12 +38,17 @@ const WhyWeAreBest = () => {
   return (
     <>
       <div className="relative">
+        {/* Background image */}
         <img
           src="https://images.pexels.com/photos/31525648/pexels-photo-31525648.jpeg"
           alt="img"
-          className="h-[100vh] w-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute top-0 left-0 h-full w-full bg-bannerLayer z-10">
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-bannerLayer z-0"></div>
+
+        {/* Content */}
+        <div className="relative z-10">
           <div className="container">
             <div className="py-20">
               <div className="px-10 pb-10">
@@ -54,25 +59,26 @@ const WhyWeAreBest = () => {
                   desccss="text-text-White"
                 />
               </div>
-              <div className="flex flex-wrap items-center justify-between">
-                <div className="flex flex-wrap">
-                  {mockData.map((item) => (
-                    <div
-                      key={item.id}
-                      className="flex items-start gap-5 p-5 w-1/2"
-                    >
-                      <div className="pt-2">
-                        <ImCheckmark className="text-background h-5 w-5" />
-                      </div>
-                      <div>
-                        <h4 className="text-text-White text-2xl font-bold">
-                          {item.title}
-                        </h4>
-                        <p className="text-text-White text-lg">{item.desc}</p>
-                      </div>
+              {/* contents */}
+              <div className="flex flex-wrap">
+                {mockData.map((item) => (
+                  <div
+                    key={item.id}
+                    className="flex items-start gap-5 p-5 w-full md:w-1/2"
+                  >
+                    <div className="pt-2">
+                      <ImCheckmark className="text-background h-5 w-5" />
                     </div>
-                  ))}
-                </div>
+                    <div>
+                      <h4 className="text-text-White text-xl md:text-2xl font-bold">
+                        {item.title}
+                      </h4>
+                      <p className="text-text-White text-base md:text-lg">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

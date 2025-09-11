@@ -2,16 +2,16 @@ import image from "../../Assets/makeThingEasy/easy-thumb.jpg";
 
 const Discover = () => {
   return (
-    <>
+    <div className="bg-bg-blog">
       <div className="container">
-        <div className="py-40 relative">
-          <div className="flex gap-x-10">
-            <div className="w-[40%]">
+        <div className="py-20 md:py-40 relative">
+          <div className="md:flex gap-x-10">
+            <div className="w-full md:w-[40%] p-5 md:p-0">
               <img src={image} alt="image" />
             </div>
-            <div className="w-[58%] pl-5">
+            <div className="w-full md:w-[58%] pl-5">
               <div className="pr-10 pb-10">
-                <h3 className="text-5xl font-bold text-text-Primary pt-5">
+                <h3 className="text-3xl md:text-5xl font-bold text-text-Primary pt-5">
                   Discover <span className="text-background">The Best Way</span>{" "}
                   of Grow a Factory
                 </h3>
@@ -51,7 +51,7 @@ const Discover = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
