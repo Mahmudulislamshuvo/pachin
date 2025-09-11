@@ -7,11 +7,11 @@ const ContactUs = () => {
   return (
     <section className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px] dark:bg-dark">
       <div className="container">
-        <div className="flex justify-between">
+        <div className="md:flex justify-between">
           {/* Left Side - Form */}
           {/* =======================Todo: Shadow saved color can't be use========== */}
           <div
-            className={`w-[55%] px-10 py-15 bg-text-White shadow-[-8px_8px_10px_rgba(0,_0,_0,_0.1)]`}
+            className={`w-full md:w-[55%] px-10 py-15 bg-text-White shadow-[-8px_8px_10px_rgba(0,_0,_0,_0.1)]`}
           >
             <div className="relative rounded-lg bg-text-White dark:bg-dark-2">
               <div className="pb-10">
@@ -86,7 +86,7 @@ const ContactUs = () => {
             </div>
           </div>
           {/* Right Side - Contact Info */}
-          <div className="w-[45%] px-8 py-10 bg-background text-text-White">
+          <div className="w-full md:w-[45%] px-8 py-10 bg-background text-text-White">
             <div className="mb-12 max-w-[570px] lg:mb-0">
               <span className="mb-4 block text-base font-semibold text-primary">
                 Contact Us

@@ -83,7 +83,7 @@ const TopProjects = () => {
             industry. Lorem Ipsum has been the industry's standard"
           />
         </div>
-        <div>
+        <div className="px-5 md:px-0">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}

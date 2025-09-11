@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -20,16 +21,26 @@ const MeatOurTeam = () => {
       role: "Senior Engineer",
       name: "Maria Johnson",
       desc: "Experienced in managing large construction projects with innovative solutions.",
-      img: "https://images.pexels.com/photos/32947545/pexels-photo-32947545.jpeg", // same image for demo
+      img: "https://images.pexels.com/photos/32947545/pexels-photo-32947545.jpeg",
     },
     {
       id: 3,
       role: "Architect",
       name: "David Smith",
       desc: "Passionate about modern designs that blend functionality with aesthetics.",
-      img: "https://images.pexels.com/photos/32947545/pexels-photo-32947545.jpeg", // same image for demo
+      img: "https://images.pexels.com/photos/32947545/pexels-photo-32947545.jpeg",
     },
   ];
+
+  const [activeOverlay, setActiveOverlay] = useState(null);
+
+  const handleClick = (id) => {
+    if (activeOverlay === id) {
+      setActiveOverlay(null); // close if already open
+    } else {
+      setActiveOverlay(id);
+    }
+  };
 
   return (
     <div className="container">
@@ -46,7 +57,8 @@ const MeatOurTeam = () => {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="w-[350px] h-[550px] relative overflow-hidden rounded-xl group mx-auto"
+              className="w-[350px] h-[550px] relative overflow-hidden rounded-xl group mx-auto cursor-pointer"
+              onClick={() => handleClick(member.id)}
             >
               {/* Team Member Image */}
               <img
@@ -55,8 +67,14 @@ const MeatOurTeam = () => {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
 
-              {/* Hover Layer */}
-              <div className="absolute inset-0 bg-text-Primary opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center text-center px-6">
+              {/* Hover / Click Layer */}
+              <div
+                className={`
+                  absolute inset-0 bg-text-Primary transition-opacity duration-500 flex flex-col items-center justify-center text-center px-6
+                  ${activeOverlay === member.id ? "opacity-100" : "opacity-0"}
+                  md:group-hover:opacity-100
+                `}
+              >
                 <p className="text-lg mb-2 text-background">{member.role}</p>
                 <h3 className="text-3xl font-semibold mb-4 text-text-White">
                   {member.name}

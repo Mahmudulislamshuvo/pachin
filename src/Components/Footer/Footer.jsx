@@ -22,7 +22,7 @@ const Footer = () => {
       {/* Content*/}
       <div className="container relative z-10">
         {/*  Note:If don't use relative contents are go down inside the layer z-index not working without relative */}
-        <div className="py-20 text-text-White text-center flex flex-col items-center justify-center px-20">
+        <div className="py-20 text-text-White text-center flex flex-col items-center justify-center px-5 md:px-20">
           <img src={logo} alt="logo" className="mb-8" />
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -37,9 +37,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-text-Secondary text-text-White">
-          <div className="flex items-center justify-between py-10">
-            <p className="">Copyright © 2019 | All Right Reserved</p>
-            <ul className="flex items-center gap-x-8">
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-between py-5 md:py-10 px-5 md:px-0 text-center md:text-left">
+            <p className="mb-2 md:mb-0">
+              Copyright © 2019 | All Right Reserved
+            </p>
+            <ul className="flex flex-wrap justify-center md:justify-start items-center gap-x-4 md:gap-x-8">
               <li className="hover:text-background transition-all duration-300 ease-in-out">
                 Help
               </li>
