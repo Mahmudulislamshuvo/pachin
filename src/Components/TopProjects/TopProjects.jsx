@@ -6,8 +6,15 @@ import { Pagination } from "swiper/modules";
 import projectImage from "../../assets/topProjects/project-item-5.jpg";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { IoArrowRedoSharp } from "react-icons/io5";
+import { useState } from "react";
 
 const TopProjects = () => {
+  const [activeId, setActiveId] = useState(null);
+
+  const handleToggle = (id) => {
+    setActiveId(activeId === id ? null : id);
+  };
+
   const projects = [
     {
       id: 1,
@@ -81,10 +88,6 @@ const TopProjects = () => {
             slidesPerView={1}
             spaceBetween={10}
             loop={true}
-            // autoplay={{
-            //   delay: 3000,
-            //   disableOnInteraction: false,
-            // }}
             breakpoints={{
               640: {
                 slidesPerView: 2,
@@ -104,20 +107,26 @@ const TopProjects = () => {
           >
             {projects.map((project) => (
               <SwiperSlide key={project.id}>
-                <div className="relative w-full h-[514px] overflow-hidden rounded-xl group">
+                <div
+                  className="relative w-full h-[514px] overflow-hidden rounded-xl group cursor-pointer"
+                  onClick={() => handleToggle(project.id)}
+                >
                   <img
                     src={project.imageUrl}
                     alt={project.title}
                     className="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute top-0 left-0 w-full h-full bg-bannerLayer opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    {/* Your overlay content */}
+                  <div
+                    className={`absolute top-0 left-0 w-full h-full bg-bannerLayer transition-opacity duration-500 ${
+                      activeId === project.id
+                        ? "opacity-100"
+                        : "opacity-0 group-hover:opacity-100"
+                    }`}
+                  >
                     <div className="space-y-50">
-                      {/* Arrow icon */}
                       <div className="flex justify-end p-5">
                         <IoArrowRedoSharp className="h-15 w-15 text-text-White p-2 rounded-full bg-text-Secondary" />
                       </div>
-                      {/* Text content */}
                       <div className="p-5">
                         <h3 className="text-lg mb-1 text-text-White">
                           {project.title}

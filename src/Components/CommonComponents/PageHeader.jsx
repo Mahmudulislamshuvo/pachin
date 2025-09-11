@@ -10,7 +10,7 @@ const PageHeader = ({
         <h2 className={`text-4xl md:text-5xl font-bold ${titlecss}`}>
           {title}
         </h2>
-        <p className={`text-lg px-5 md:px-60 ${desccss}`}>{desc}</p>
+        <p className={`text-lg px-0 md:px-60 ${desccss}`}>{desc}</p>
       </div>
     </>
   );

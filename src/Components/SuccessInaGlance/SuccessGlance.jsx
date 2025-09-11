@@ -11,7 +11,7 @@ const SuccessGlance = () => {
     },
     {
       id: 2,
-      icon: <LuNotepadText className="w-20 h-20 text-background" />, // চাইলে অন্য icon নিতে পারো
+      icon: <LuNotepadText className="w-20 h-20 text-background" />,
       number: "980+",
       label: "Happy Clients",
     },
@@ -32,17 +32,17 @@ const SuccessGlance = () => {
   return (
     <div className="container">
       <div className="py-10">
-        <div className="px-20 pb-10">
+        <div className="px-5 md:px-20 pb-10">
           <PageHeader
             title="Success In A Glance"
             desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
           />
         </div>
-        <div className="flex justify-between items-center gap-x-5 ">
+        <div className="md:flex md:justify-between md:items-center md:gap-x-5 mx-5 md:mx-0 space-y-5 md:space-y-0">
           {stats.map((item) => (
             <div
               key={item.id}
-              className="py-12 px-10 border border-text-Secondary flex flex-col items-center justify-center gap-5 w-4/1"
+              className="py-12 px-10 border border-text-Secondary flex flex-col items-center justify-center gap-5 w-full md:w-4/1"
             >
               {item.icon}
               <div className="text-center">
