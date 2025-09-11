@@ -4,7 +4,7 @@ import ClientsFeadback from "./Components/ClientsFeadback/ClientsFeadback";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Discover from "./Components/Discover/Discover";
 import Footer from "./Components/Footer/Footer";
-import MakeThingEasy from "./Components/MakeThingEasy/MakeThingEasy";
+import MakeThingEasy from "./Components/WeMakeThingEasy/MakeThingEasy";
 import MeatOurTeam from "./Components/MeetOurTeam/MeatOurTeam";
 import Navbar from "./Components/Navbar/Navbar";
 import OurServices from "./Components/ourServices/OurServices";
