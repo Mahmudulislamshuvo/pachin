@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../../assets/logo.png";
-import { HiMenu, HiX } from "react-icons/hi";
+import { HiChevronDown, HiMenu, HiX } from "react-icons/hi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +17,11 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-x-5">
             <ul className="flex gap-8 text-[16px] text-text-White font-medium uppercase">
-              <li className="relative group cursor-pointer transition-colors">
+              <li className="relative group cursor-pointer transition-colors flex items-center gap-x-1">
                 Home
+                <HiChevronDown className="text-lg" />
                 {/* Dropdown Box */}
-                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Home 1
                   </li>
@@ -36,10 +37,74 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="cursor-pointer transition-colors">About Us</li>
-              <li className="cursor-pointer transition-colors">Services</li>
-              <li className="cursor-pointer transition-colors">Project</li>
-              <li className="cursor-pointer transition-colors">Blog</li>
-              <li className="cursor-pointer transition-colors">Pages</li>
+              <li className="cursor-pointer transition-colors relative group">
+                Services
+                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 1
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 2
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 3
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 4
+                  </li>
+                </ul>
+              </li>
+              <li className="cursor-pointer transition-colors relative group">
+                Project
+                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 1
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 2
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 3
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 4
+                  </li>
+                </ul>
+              </li>
+              <li className="cursor-pointer transition-colors relative group">
+                Blog
+                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 1
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 2
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 3
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 4
+                  </li>
+                </ul>
+              </li>
+              <li className="cursor-pointer transition-colors relative group">
+                Pages
+                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 1
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 2
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 3
+                  </li>
+                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                    Home 4
+                  </li>
+                </ul>
+              </li>
               <li className="cursor-pointer transition-colors">Contact</li>
             </ul>
             <button className="bg-text-White text-background py-3 px-6 rounded-full font-medium hover:shadow-md transition">
