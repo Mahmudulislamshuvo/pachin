@@ -35,7 +35,11 @@ const WelcomeToPachin = () => {
               </div>
 
               {/* Expert (middle one) */}
-              <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 my-5 md:my-8 sm:my-5 relative bg-text-Primary md:bg-white md:shadow-lg md:z-10">
+              <div
+                className="w-11/12 max-w-sm sm:w-3/5 relative 
+                bg-text-Primary md:bg-white md:z-10 
+                lg:scale-110"
+              >
                 <div className="bg-background md:bg-background overflow-hidden py-5 md:py-20">
                   <div className="text-center flex flex-col items-center justify-center p-6">
                     <HiOutlineLightBulb className="h-20 w-20 text-text-White" />
