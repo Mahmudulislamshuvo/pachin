@@ -31,16 +31,38 @@ const TheBestReliable = () => {
             </p>
           </div>
           <div className="flex gap-x-10">
-            <div className="px-10 py-5 border rounded-6px w-full relative">
-              <p>Phone:</p>
-              <p>+123 4567 8910</p>
-              <div className="bg-background p-3 rounded-24px inline-block">
-                <IoCall className="h-5 w-5 p-3 text-text-White" />
+            <div className="px-1 py-5 border rounded-6px w-full relative">
+              {/* Icon */}
+              <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-secondaryBackground rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 bg-background rounded-full flex items-center justify-center text-text-White">
+                  <IoCall className="h-5 w-5" />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <div className="ml-8 text-text-Secondary">
+                <p className="text-lg font-medium">Phone:</p>
+                <p className="text-lg font-semibold text-text-Primary">
+                  +123 4567 8910
+                </p>
               </div>
             </div>
-            <div className="px-10 py-5 border rounded-6px w-full relative">
-              <p>Phone:</p>
-              <p>+123 4567 8910</p>
+
+            <div className="px-1 py-5 border rounded-6px w-full relative">
+              {/* Icon */}
+              <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-secondaryBackground rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 bg-background rounded-full flex items-center justify-center text-text-White">
+                  <IoCall className="h-5 w-5" />
+                </div>
+              </div>
+
+              {/* Text Content */}
+              <div className="ml-8 text-text-Secondary">
+                <p className="text-lg font-medium">Phone:</p>
+                <p className="text-lg font-semibold text-text-Primary">
+                  +123 4567 8910
+                </p>
+              </div>
             </div>
           </div>
         </div>

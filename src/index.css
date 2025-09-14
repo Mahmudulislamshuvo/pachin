@@ -10,6 +10,7 @@
   --color-bannerLayer: rgba(65, 65, 65, 0.74);
   --color-bg-input: #f7f7f8;
   --color-bg-blog: #f4f7fb;
+  --color-secondaryBackground: rgba(255, 94, 20, 0.3);
 
   /* Shadow */
   --shadow-section: 0 4px 10px rgba(0, 0, 0, 0.1);
