@@ -1,19 +1,11 @@
-// src/components/ClientsFeadback.jsx
-import React from "react";
 import PageHeader from "../CommonComponents/PageHeader";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 import client1 from "../../assets/clientFeadback/clients-thumb-1.jpg";
 import { FaStar } from "react-icons/fa";
 
-/**
- * ClientsFeadback
- * - sm & md: show only textual slides (no pictures)
- * - lg+: show left image, center slider (with pictures + text), right image
- */
 const ClientsFeadback = () => {
   const testimonials = [
     {
@@ -62,7 +54,11 @@ const ClientsFeadback = () => {
             spaceBetween={20}
             loop={true}
             pagination={{ clickable: true }}
-            modules={[Pagination]}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            modules={[Pagination, Autoplay]} // Autoplay যোগ করা হলো
             className="mySwiper"
           >
             {testimonials.map((t) => (
@@ -108,7 +104,11 @@ const ClientsFeadback = () => {
               spaceBetween={20}
               loop={true}
               pagination={{ clickable: true }}
-              modules={[Pagination]}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              modules={[Pagination, Autoplay]} // Autoplay এখানে ও
               className="mySwiper"
             >
               {testimonials.map((t) => (
