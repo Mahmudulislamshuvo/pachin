@@ -12,7 +12,8 @@
   --color-bg-blog: #f4f7fb;
 
   /* Shadow */
-  --color-shadowSection: rgba(0, _0, _0, _0.1);
+  --shadow-section: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --shadow-card: 6px 6px 10px rgba(0, 0, 0, 0.1);
 
   /* Shadow variables */
 
