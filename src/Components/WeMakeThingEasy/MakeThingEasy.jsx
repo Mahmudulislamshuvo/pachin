@@ -24,7 +24,7 @@ const MakeThingEasy = () => {
             <ol className="relative md:border-s border-background mx-5 md:mx-0">
               {/* Step 1 */}
               <li className="mb-10 ms-6 pl-5">
-                <span className="absolute flex items-center justify-center w-10 h-10 text-sm font-bold text-background bg-text-White border-2 border-background rounded-full -start-5 mt-2 md:mt-0">
+                <span className="absolute flex items-center justify-center w-10 h-10 text-sm font-bold text-background bg-text-White border-2 border-background rounded-24px -start-5 mt-2 md:mt-0">
                   01
                 </span>
                 <h3 className="mb-1 text-2xl font-semibold text-text-Primary">
@@ -38,7 +38,7 @@ const MakeThingEasy = () => {
 
               {/* Step 2 */}
               <li className="mb-10 ms-6 pl-5">
-                <span className="absolute flex items-center justify-center w-10 h-10 text-sm font-bold text-background bg-text-White border-2 border-background rounded-full -start-5 mt-2 md:mt-0">
+                <span className="absolute flex items-center justify-center w-10 h-10 text-sm font-bold text-background bg-text-White border-2 border-background rounded-24px -start-5 mt-2 md:mt-0">
                   02
                 </span>
                 <h3 className="mb-1 text-2xl font-semibold text-text-Primary">
@@ -52,7 +52,7 @@ const MakeThingEasy = () => {
 
               {/* Step 3 */}
               <li className="ms-6 pl-5">
-                <span className="absolute flex items-center justify-center w-10 h-10 text-sm font-bold text-background bg-text-White border-2 border-background rounded-full -start-5 mt-2 md:mt-0">
+                <span className="absolute flex items-center justify-center w-10 h-10 text-sm font-bold text-background bg-text-White border-2 border-background rounded-24px -start-5 mt-2 md:mt-0">
                   03
                 </span>
                 <h3 className="mb-1 text-2xl font-semibold text-text-Primary">

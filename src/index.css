@@ -13,7 +13,10 @@
 
   /* Shadow */
   --shadow-section: 0 4px 10px rgba(0, 0, 0, 0.1);
-  --shadow-card: 6px 6px 10px rgba(0, 0, 0, 0.1);
+  --shadow-card: 1px 2px 1px 1px rgba(0, 0, 0, 0.1);
+  --shadow-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  --shadow-box-LGshadow: 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
   /* Shadow variables */
 
@@ -21,6 +24,7 @@
   --radius-0px: 0px;
   --radius-2px: 2px;
   --radius-4px: 4px;
+  --radius-6px: 6px;
   --radius-8px: 8px;
   --radius-12px: 12px;
   --radius-16px: 16px;

@@ -23,7 +23,7 @@ const Banner = () => {
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown.
               </p>
-              <button className="py-3 px-8 text-text-White bg-background rounded-full font-medium mt-8">
+              <button className="py-3 px-8 text-text-White bg-background rounded-24px font-medium mt-8">
                 LEARN MORE
               </button>
             </div>

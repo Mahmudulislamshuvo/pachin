@@ -111,7 +111,7 @@ const Navbar = () => {
               </li>
               <li className="cursor-pointer transition-colors">Contact</li>
             </ul>
-            <button className="bg-text-White text-background py-3 px-6 rounded-full font-medium hover:shadow-md transition">
+            <button className="bg-text-White text-background py-3 px-6 rounded-24px font-medium hover:shadow-card transition">
               GET A QUOTE
             </button>
           </div>
@@ -155,7 +155,7 @@ const Navbar = () => {
             Contact
           </li>
         </ul>
-        <button className="w-full bg-text-White text-background py-3 rounded-full font-medium hover:shadow-md transition">
+        <button className="w-full bg-text-White text-background py-3 rounded-24px font-medium hover:shadow-md transition">
           GET A QUOTE
         </button>
       </div>

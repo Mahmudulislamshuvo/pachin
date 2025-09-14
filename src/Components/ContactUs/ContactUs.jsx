@@ -11,9 +11,9 @@ const ContactUs = () => {
           {/* Left Side - Form */}
           {/* =======================Todo: Shadow saved color can't be use========== */}
           <div
-            className={`w-full md:w-[55%] px-10 py-15 bg-text-White shadow-[-8px_8px_10px_rgba(0,_0,_0,_0.1)]`}
+            className={`w-full md:w-[55%] px-10 py-15 bg-text-White shadow-section`}
           >
-            <div className="relative rounded-lg bg-text-White dark:bg-dark-2">
+            <div className="relative rounded-8px bg-text-White dark:bg-dark-2">
               <div className="pb-10">
                 <h4 className="text-3xl text-text-Primary font-bold">
                   Request A Quote
@@ -29,26 +29,26 @@ const ContactUs = () => {
                   <input
                     type="text"
                     placeholder="Full Name"
-                    className="w-full rounded-sm px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow"
+                    className="w-full rounded-2px px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow-box-shadow"
                   />
 
                   <input
                     type="email"
                     placeholder="Phone Number"
-                    className="w-full rounded-sm px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow"
+                    className="w-full rounded-px px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow-box-shadow"
                   />
                 </div>
                 <div className="flex justify-between gap-x-5 mt-5">
                   <input
                     type="text"
                     placeholder="Email Address"
-                    className="w-full rounded-sm px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow"
+                    className="w-full rounded-px px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow-box-shadow"
                   />
 
                   <input
                     type="text"
                     placeholder="Subject"
-                    className="w-full rounded-sm px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow"
+                    className="w-full rounded-px px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow-box-shadow"
                   />
                 </div>
                 <div>
@@ -56,7 +56,7 @@ const ContactUs = () => {
                     <textarea
                       rows="6"
                       placeholder="Your Message"
-                      className="w-full rounded-sm px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow"
+                      className="w-full rounded-px px-[14px] py-3 text-base  outline-hidden bg-bg-input shadow-box-shadow"
                     ></textarea>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ const ContactUs = () => {
                   </div>
                   <button
                     type="submit"
-                    className="bg-primary py-3 px-5 transition bg-background rounded-full text-text-White text-lg"
+                    className="bg-primary py-3 px-5 transition bg-background rounded-24px text-text-White text-lg"
                   >
                     Send Message
                   </button>
@@ -102,7 +102,7 @@ const ContactUs = () => {
 
               {/* Location */}
               <div className="mb-8 flex w-full max-w-[370px]">
-                <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded-sm bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded-2px bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
                   {/* Location Icon */}
                   <svg
                     width="32"
@@ -129,7 +129,7 @@ const ContactUs = () => {
 
               {/* Phone */}
               <div className="mb-8 flex w-full max-w-[370px]">
-                <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded-sm bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded-2px bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
                   {/* Phone Icon */}
                   📞
                 </div>
@@ -145,7 +145,7 @@ const ContactUs = () => {
 
               {/* Email */}
               <div className="mb-8 flex w-full max-w-[370px]">
-                <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded-sm bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded-2px bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
                   📧
                 </div>
                 <div className="w-full">

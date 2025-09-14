@@ -57,7 +57,7 @@ const MeatOurTeam = () => {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="w-[350px] h-[550px] relative overflow-hidden rounded-xl group mx-auto cursor-pointer"
+              className="w-[350px] h-[550px] relative overflow-hidden rounded-12px group mx-auto cursor-pointer"
               onClick={() => handleClick(member.id)}
             >
               {/* Team Member Image */}
@@ -85,16 +85,16 @@ const MeatOurTeam = () => {
 
                 {/* Social Icons */}
                 <div className="flex space-x-4 text-text-White text-xl">
-                  <div className="p-3 border border-text-White rounded-full hover:bg-text-White hover:text-text-black transition">
+                  <div className="p-3 border border-text-White rounded-24px hover:bg-text-White hover:text-text-black transition">
                     <FaFacebookF />
                   </div>
-                  <div className="p-3 border border-text-White rounded-full hover:bg-text-White hover:text-text-black transition">
+                  <div className="p-3 border border-text-White rounded-24px hover:bg-text-White hover:text-text-black transition">
                     <FaTwitter />
                   </div>
-                  <div className="p-3 border border-text-White rounded-full hover:bg-text-White hover:text-text-black transition">
+                  <div className="p-3 border border-text-White rounded-24px hover:bg-text-White hover:text-text-black transition">
                     <FaLinkedinIn />
                   </div>
-                  <div className="p-3 border border-text-White rounded-full hover:bg-text-White hover:text-text-black transition">
+                  <div className="p-3 border border-text-White rounded-24px hover:bg-text-White hover:text-text-black transition">
                     <FaInstagram />
                   </div>
                 </div>

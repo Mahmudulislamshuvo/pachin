@@ -43,7 +43,7 @@ const Discover = () => {
                   </p>
                 </div>
 
-                <button className="text-text-White bg-background py-3 px-10 rounded-full text-xl">
+                <button className="text-text-White bg-background py-3 px-10 rounded-24px text-xl">
                   Learn More
                 </button>
               </div>

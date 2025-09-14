@@ -10,7 +10,7 @@ const BlogCard = ({
     <>
       <div className="relative w-full mx-auto group">
         {/* Background Image */}
-        <div className="rounded-xl overflow-hidden shadow-lg">
+        <div className="rounded-12px overflow-hidden shadow-box-LGshadow">
           <img
             src={imageUrl}
             alt="Industrial excavator"
@@ -19,13 +19,13 @@ const BlogCard = ({
         </div>
 
         {/* Overlapping Content Box */}
-        <div className="relative bg-text-White w-11/12 mx-auto rounded-xl p-6 -mt-16 z-10 shadow-lg">
+        <div className="relative bg-text-White w-11/12 mx-auto rounded-12px p-6 -mt-16 z-10 shadow-box-LGshadow">
           {/* Author Information */}
           <div className="flex items-center mb-4">
             <img
               src={authorImage}
               alt={authorName}
-              className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-text-White shadow"
+              className="w-12 h-12 rounded-24px object-cover mr-4 border-2 border-text-White shadow-box-shadow"
             />
             <div>
               <p className="font-bold text-gray-800 text-lg">{authorName}</p>

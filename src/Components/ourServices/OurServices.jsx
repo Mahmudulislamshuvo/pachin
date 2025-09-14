@@ -77,9 +77,9 @@ const OurServices = () => {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className=" rounded-xl py-10 w-full sm:w-full md:w-[30%] group transition-colors duration-300 hover:bg-background bg-text-White"
+              className=" rounded-12px py-10 w-full sm:w-full md:w-[30%] group transition-colors duration-300 hover:bg-background bg-text-White"
             >
-              <div className="p-5 flex flex-col items-center justify-center transition-colors duration-300 group-hover:text-text-White rounded-xl">
+              <div className="p-5 flex flex-col items-center justify-center transition-colors duration-300 group-hover:text-text-White rounded-12px">
                 {/* dynamically handled Icons and color */}
                 <service.icon className="w-16 h-16 text-background group-hover:text-text-White transition-colors duration-300" />
 

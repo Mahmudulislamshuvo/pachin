@@ -63,7 +63,7 @@ const ClientsFeadback = () => {
           >
             {testimonials.map((t) => (
               <SwiperSlide key={t.id}>
-                <div className="bg-text-White rounded-lg p-6 shadow-md">
+                <div className="bg-text-White rounded-8px p-6 shadow-box-md">
                   <h5 className="text-2xl font-bold text-text-Primary mb-2">
                     {t.name}
                   </h5>
@@ -93,7 +93,7 @@ const ClientsFeadback = () => {
             <img
               src={client1}
               alt="client left"
-              className="w-full h-auto rounded-md object-cover"
+              className="w-full h-auto rounded-6px object-cover"
             />
           </div>
 
@@ -113,13 +113,13 @@ const ClientsFeadback = () => {
             >
               {testimonials.map((t) => (
                 <SwiperSlide key={t.id}>
-                  <div className="flex items-center justify-center bg-text-White rounded-lg shadow-md overflow-hidden">
+                  <div className="flex items-center justify-center bg-text-White rounded-8px shadow-box-md overflow-hidden">
                     {/* Image (left part of slide content) */}
                     <div className="w-[35%] flex items-center justify-center p-6">
                       <img
                         src={t.image}
                         alt={t.name}
-                        className="h-[300px] w-auto object-cover rounded-md"
+                        className="h-[300px] w-auto object-cover rounded-6px"
                       />
                     </div>
 
@@ -153,7 +153,7 @@ const ClientsFeadback = () => {
             <img
               src={client1}
               alt="client right"
-              className="w-full h-auto rounded-md object-cover"
+              className="w-full h-auto rounded-6px object-cover"
             />
           </div>
         </div>
