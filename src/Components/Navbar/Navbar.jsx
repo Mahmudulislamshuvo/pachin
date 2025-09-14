@@ -37,8 +37,9 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="cursor-pointer transition-colors">About Us</li>
-              <li className="cursor-pointer transition-colors relative group">
+              <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Services
+                <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Home 1
@@ -54,8 +55,9 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li className="cursor-pointer transition-colors relative group">
+              <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Project
+                <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Home 1
@@ -71,8 +73,9 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li className="cursor-pointer transition-colors relative group">
+              <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Blog
+                <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Home 1
@@ -88,8 +91,9 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li className="cursor-pointer transition-colors relative group">
+              <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Pages
+                <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Home 1
