@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "../../assets/logo.png";
 import { HiChevronDown, HiMenu, HiX } from "react-icons/hi";
 
-const Navbar = () => {
+const Navbar = ({ setPage }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
 
@@ -25,36 +25,56 @@ const Navbar = () => {
               <li className="relative group cursor-pointer transition-colors flex items-center gap-x-1">
                 Home
                 <HiChevronDown className="text-lg" />
-                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                  <li
+                    onClick={() => setPage("home")}
+                    className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White"
+                  >
                     Home 1
                   </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                  <li
+                    onClick={() => setPage("home")}
+                    className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White"
+                  >
                     Home 2
                   </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                  <li
+                    onClick={() => setPage("home")}
+                    className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White"
+                  >
                     Home 3
                   </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
+                  <li
+                    onClick={() => setPage("home")}
+                    className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White"
+                  >
                     Home 4
                   </li>
                 </ul>
               </li>
-              <li className="cursor-pointer transition-colors">About Us</li>
+              <li
+                onClick={() => setPage("aboutus")}
+                className="cursor-pointer transition-colors"
+              >
+                About Us
+              </li>
 
               {/* Services */}
               <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Services
                 <HiChevronDown className="text-lg" />
-                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Services 1
                   </li>
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Services 2
                   </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Services 3
+                  <li
+                    onClick={() => setPage("service")}
+                    className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White"
+                  >
+                    Service Details
                   </li>
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White"></li>
                 </ul>
@@ -64,7 +84,7 @@ const Navbar = () => {
               <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Project
                 <HiChevronDown className="text-lg" />
-                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Project 1
                   </li>
@@ -84,7 +104,7 @@ const Navbar = () => {
               <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Blog
                 <HiChevronDown className="text-lg" />
-                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Blog 1
                   </li>
@@ -104,7 +124,7 @@ const Navbar = () => {
               <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Pages
                 <HiChevronDown className="text-lg" />
-                <ul className="absolute left-0 top-full mt-2 py-2 w-40 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
+                <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Pages 1
                   </li>
