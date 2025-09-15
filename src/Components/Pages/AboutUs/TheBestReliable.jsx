@@ -3,7 +3,7 @@ import { IoCall } from "react-icons/io5";
 const TheBestReliable = () => {
   return (
     <div className="container">
-      <div className="py-30 flex gap-x-10">
+      <div className="py-30 flex items-center gap-x-10">
         {/* left */}
         <div className="w-[52%]">
           <div className="">
@@ -67,7 +67,21 @@ const TheBestReliable = () => {
           </div>
         </div>
         {/* right */}
-        <div className="w-[45%] bg-blue-400">iosdhfyiuh</div>
+        <div className="w-[45%]">
+          <div className="relative">
+            <img
+              src="https://images.pexels.com/photos/29498845/pexels-photo-29498845.jpeg"
+              alt="https://images.pexels.com/photos/29498845/pexels-photo-29498845.jpeg"
+              className="h-[500px] w-[400px] object-cover"
+            />
+
+            <img
+              src="https://images.pexels.com/photos/19505711/pexels-photo-19505711.jpeg"
+              alt="https://images.pexels.com/photos/33629824/pexels-photo-33629824.jpeg"
+              className="h-[500px] w-[400px] object-cover absolute top-20 left-20 p-2 bg-text-White rounded-6px"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

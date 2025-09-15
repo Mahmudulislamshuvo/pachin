@@ -1,4 +1,6 @@
+import SuccessCount from "./SuccessCount";
 import TheBestReliable from "./TheBestReliable";
+import WeEnsureQuality from "./WeEnsureQuality";
 
 const AboutUS = ({ setPage }) => {
   return (
@@ -26,6 +28,8 @@ const AboutUS = ({ setPage }) => {
         </div>
       </div>
       <TheBestReliable />
+      <WeEnsureQuality />
+      <SuccessCount />
     </div>
   );
 };
