@@ -39,3 +39,20 @@
   margin: 0 auto;
   max-width: 1200px;
 }
+
+/* Slider navigations bullets cutom Design  */
+.custom-pagination .swiper-pagination-bullet {
+  @apply w-3 h-3 bg-gray-300 rounded-full opacity-100 cursor-pointer transition-all duration-300 ease-in-out;
+}
+
+/* Styling for the active pagination bullet */
+.custom-pagination .swiper-pagination-bullet-active {
+  @apply w-8 bg-orange-600 rounded-full;
+}
+
+/* Optional: Add a hover effect for better UX */
+.custom-pagination .swiper-pagination-bullet:hover {
+  @apply bg-gray-400;
+}
+
+/* Slider navigations bullets cutom Design  END*/

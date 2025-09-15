@@ -1,5 +1,6 @@
 import HowWeWork from "./HowWeWork";
 import SuccessCount from "./SuccessCount";
+import Testimonial from "./Testimonial";
 import TheBestReliable from "./TheBestReliable";
 import WeEnsureQuality from "./WeEnsureQuality";
 
@@ -32,6 +33,7 @@ const AboutUS = ({ setPage }) => {
       <WeEnsureQuality />
       <SuccessCount />
       <HowWeWork />
+      <Testimonial />
     </div>
   );
 };
