@@ -1,4 +1,6 @@
+import Footer from "../Common/Footer";
 import HowWeWork from "./HowWeWork";
+import MeetWithOurLeaders from "./MeetWithOurLeaders";
 import SuccessCount from "./SuccessCount";
 import Testimonial from "./Testimonial";
 import TheBestReliable from "./TheBestReliable";
@@ -34,6 +36,8 @@ const AboutUS = ({ setPage }) => {
       <SuccessCount />
       <HowWeWork />
       <Testimonial />
+      <MeetWithOurLeaders />
+      <Footer />
     </div>
   );
 };

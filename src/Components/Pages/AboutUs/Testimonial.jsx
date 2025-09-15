@@ -41,7 +41,7 @@ const testimonials = [
 const Testimonial = () => {
   return (
     <div className="bg-bg-blog py-20">
-      <div className="container px-5 md:px-0 mx-auto">
+      <div className="container px-5 md:px-0">
         <div className="text-center mb-12">
           <p className="uppercase text-sm tracking-wide text-text-Secondary">
             Testimonials
