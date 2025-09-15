@@ -14,6 +14,7 @@ import TopProjects from "./Components/TopProjects/TopProjects";
 import WelcomeToPachin from "./Components/WelcomeToPachin/WelcomeToPachin";
 import WhyWeAreBest from "./Components/WhyWeAreBest/WhyWeAreBest";
 import AboutUS from "./Components/Pages/AboutUs/AboutUS";
+import Footer2 from "./Components/Pages/Common//Footer";
 
 const App = () => {
   const [page, setPage] = useState("home");
@@ -38,6 +39,7 @@ const App = () => {
           <ContactUs />
           <ClientsFeadback />
           <Blog />
+          <Footer />
         </>
       )}
 
@@ -45,7 +47,7 @@ const App = () => {
       {page === "services" && <OurServices />}
       {page === "projects" && <TopProjects />}
       {page === "contact" && <ContactUs />}
-      <Footer />
+      {page == !"home" && <Footer2 />}
     </div>
   );
 };

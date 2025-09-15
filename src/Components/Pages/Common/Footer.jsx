@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Column 1: Pachin */}
         <div>
           <img src={logo} alt="Footer2logo" className="mb-4" />
-          <p className="text-sm text-gray-400 mb-6">
+          <p className="text-sm text-text-White/80 mb-6">
             Printer took a galley of type and scrambled it to make a type
             specimen book.
           </p>
@@ -36,33 +36,57 @@ const Footer = () => {
         {/* Column 2: Our Services */}
         <div>
           <h4 className="text-xl font-bold mb-4">Our Services</h4>
-          <ul className="space-y-2 text-text-Secondary">
-            <li>Oil & Gas Engineering</li>
-            <li>Automotive Manufacturing</li>
-            <li>Chemical Research</li>
-            <li>Agricultural Automation</li>
-            <li>Mechanical Engineering</li>
-            <li>Civil Engineering</li>
+          <ul className="space-y-2 text-text-White/80">
+            <li className="transition-colors duration-300 hover:text-background">
+              Oil & Gas Engineering
+            </li>
+            <li className="transition-colors duration-300 hover:text-background">
+              Automotive Manufacturing
+            </li>
+            <li className="transition-colors duration-300 hover:text-background">
+              Chemical Research
+            </li>
+            <li className="transition-colors duration-300 hover:text-background">
+              Agricultural Automation
+            </li>
+            <li className="transition-colors duration-300 hover:text-background">
+              Mechanical Engineering
+            </li>
+            <li className="transition-colors duration-300 hover:text-background">
+              Civil Engineering
+            </li>
           </ul>
         </div>
 
         {/* Column 3: Company */}
         <div>
           <h4 className="text-xl font-bold mb-4">Company</h4>
-          <ul className="space-y-2 text-text-Secondary">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Our Services</li>
-            <li>Our Blog</li>
-            <li>Latest News</li>
-            <li>Our Contact</li>
+          <ul className="space-y-2 text-text-White/80">
+            <li className="transition-colors duration-300 hover:text-background">
+              Home
+            </li>
+            <li className="transition-colors duration-300 hover:text-background">
+              About Us
+            </li>
+            <li className="transition-colors duration-300 hover:text-background">
+              Our Services
+            </li>
+            <li className="transition-colors duration-300 hover:text-background">
+              Our Blog
+            </li>
+            <li className="transition-colors duration-300 hover:text-background">
+              Latest News
+            </li>
+            <li className="transition-colors duration-300 hover:text-background">
+              Our Contact
+            </li>
           </ul>
         </div>
 
         {/* Column 4: Subscribe Us */}
         <div>
           <h4 className="text-xl font-bold mb-4">Subscribe Us</h4>
-          <p className="text-sm text-text-Secondary mb-4">
+          <p className="text-sm text-text-White/80 mb-4">
             Printer took a galley of type and scrambled it to make a type
             specimen book.
           </p>
@@ -79,14 +103,24 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto border-t border-text-Secondary mt-12 flex flex-col md:flex-row items-center justify-between text-sm text-text-Secondary">
+      <div className="max-w-7xl mx-auto border-t border-text-Secondary mt-12 flex flex-col md:flex-row items-center justify-between text-sm text-text-White/80">
         <p>Copyright © 2019 | All Right Reserved</p>
         <ul className="flex space-x-4 py-8">
-          <li>Help</li>
-          <li>Privacy & Policy</li>
-          <li>Services</li>
-          <li>Blog</li>
-          <li>FAQ</li>
+          <li className="cursor-pointer transition-colors duration-300 hover:text-background">
+            Help
+          </li>
+          <li className="cursor-pointer transition-colors duration-300 hover:text-background">
+            Privacy & Policy
+          </li>
+          <li className="cursor-pointer transition-colors duration-300 hover:text-background">
+            Services
+          </li>
+          <li className="cursor-pointer transition-colors duration-300 hover:text-background">
+            Blog
+          </li>
+          <li className="cursor-pointer transition-colors duration-300 hover:text-background">
+            FAQ
+          </li>
         </ul>
       </div>
     </footer>
