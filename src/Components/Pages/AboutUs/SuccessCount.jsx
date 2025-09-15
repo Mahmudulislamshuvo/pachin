@@ -46,7 +46,7 @@ const SuccessCount = () => {
             {stats.map((item) => (
               <div
                 key={item.id}
-                className="py-12 px-10 border border-text-Secondary flex flex-col items-center justify-center gap-5 w-full md:w-1/4 bg-white/10 backdrop-blur-sm"
+                className="py-12 px-10 border border-text-Secondary flex flex-col items-center justify-center gap-5 w-full md:w-1/4 bg-text-White/10 backdrop-blur-sm"
               >
                 {item.icon}
                 <div className="text-center">
