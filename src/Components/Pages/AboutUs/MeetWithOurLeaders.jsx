@@ -64,7 +64,7 @@ const MeetWithOurLeaders = () => {
           <p className="text-text-Secondary uppercase text-sm font-medium tracking-widest mb-2">
             TEAM MEMBERS
           </p>
-          <h2 className="text-4xl font-bold text-text-Secondary">
+          <h2 className="text-4xl font-bold text-text-Primary">
             Meet With Our Leaders
           </h2>
         </div>
@@ -86,7 +86,7 @@ const MeetWithOurLeaders = () => {
                     <p className="text-white text-lg font-semibold">{member.name}</p>
                 </div> */}
               </div>
-              <div className="p-6 text-center">
+              <div className="p-6 text-center border-x border-b rounded-x-8px rounded-b-8px border-text-Secondary/20">
                 <h3 className="text-xl font-semibold text-text-Secondary mb-1">
                   {member.name}
                 </h3>
