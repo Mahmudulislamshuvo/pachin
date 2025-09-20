@@ -1,6 +1,6 @@
 import { useState } from "react";
-import logo from "../../assets/logo.png";
 import { HiChevronDown, HiMenu, HiX } from "react-icons/hi";
+import Logo from "../CommonComponents/Logo";
 
 const Navbar = ({ setPage }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = ({ setPage }) => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div>
-            <img src={logo} alt="logo" className="h-10 w-auto" />
+            <Logo />
           </div>
 
           {/* Desktop Menu */}
@@ -24,7 +24,7 @@ const Navbar = ({ setPage }) => {
             <ul className="flex gap-8 text-[16px] text-text-White font-medium uppercase">
               <li className="relative group cursor-pointer transition-colors flex items-center gap-x-1">
                 Home
-                <HiChevronDown className="text-lg" />
+                {/* <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li
                     onClick={() => setPage("home")}
@@ -50,7 +50,7 @@ const Navbar = ({ setPage }) => {
                   >
                     Home 4
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li
                 onClick={() => setPage("aboutus")}
@@ -62,7 +62,7 @@ const Navbar = ({ setPage }) => {
               {/* Services */}
               <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Services
-                <HiChevronDown className="text-lg" />
+                {/* <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Services 1
@@ -77,13 +77,13 @@ const Navbar = ({ setPage }) => {
                     Service Details
                   </li>
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White"></li>
-                </ul>
+                </ul> */}
               </li>
 
               {/* Project */}
               <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Project
-                <HiChevronDown className="text-lg" />
+                {/* <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Project 1
@@ -97,13 +97,13 @@ const Navbar = ({ setPage }) => {
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Project 4
                   </li>
-                </ul>
+                </ul> */}
               </li>
 
               {/* Blog */}
               <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Blog
-                <HiChevronDown className="text-lg" />
+                {/* <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Blog 1
@@ -117,13 +117,13 @@ const Navbar = ({ setPage }) => {
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Blog 4
                   </li>
-                </ul>
+                </ul> */}
               </li>
 
               {/* Pages */}
               <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
                 Pages
-                <HiChevronDown className="text-lg" />
+                {/* <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Pages 1
@@ -137,7 +137,7 @@ const Navbar = ({ setPage }) => {
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
                     Pages 4
                   </li>
-                </ul>
+                </ul> */}
               </li>
 
               <li className="cursor-pointer transition-colors">Contact</li>
