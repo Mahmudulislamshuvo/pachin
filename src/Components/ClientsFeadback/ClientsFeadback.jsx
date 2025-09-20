@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import client1 from "../../assets/clientFeadback/clients-thumb-1.jpg";
 import { FaStar } from "react-icons/fa";
 
 const ClientsFeadback = () => {
@@ -11,26 +10,34 @@ const ClientsFeadback = () => {
     {
       id: 1,
       name: "Farhan Islam",
-      role: "CEO, Doridhub",
       rating: 5,
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      image: client1,
+      role: "CEO, Doridhub",
+      img: "https://randomuser.me/api/portraits/men/32.jpg",
     },
     {
       id: 2,
-      name: "Sadia Khan",
-      role: "CTO, ExampleCorp",
+      name: "Aisha Khan",
       rating: 5,
-      text: "Excellent collaboration and delivery. The results were on time and beyond expectation.",
-      image: client1,
+      text: "The readable content of a page when looking at its layout is a long established fact that a reader will be distracted by.",
+      role: "Lead Designer, Creativa",
+      img: "https://randomuser.me/api/portraits/women/44.jpg",
     },
     {
       id: 3,
-      name: "Md. Rahman",
-      role: "Product Manager",
+      name: "John Doe",
       rating: 5,
-      text: "Professional team, great communication, and a quick turnaround. Highly recommended.",
-      image: client1,
+      text: "Looking at its layout, it is a long established fact that a reader will be distracted by the readable content of a page.",
+      role: "CTO, Tech Solutions",
+      img: "https://randomuser.me/api/portraits/men/34.jpg",
+    },
+    {
+      id: 4,
+      name: "Emily White",
+      rating: 5,
+      text: "A reader will be distracted by the readable content of a page. It is a long established fact when looking at its layout.",
+      role: "Marketing Head, Innovate Inc.",
+      img: "https://randomuser.me/api/portraits/women/65.jpg",
     },
   ];
 
@@ -44,119 +51,76 @@ const ClientsFeadback = () => {
           />
         </div>
 
-        {/* ====================
-            Small & Medium (<= md)
-            - No pictures in the slides
-           ==================== */}
-        <div className="lg:hidden px-5">
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={20}
-            loop={true}
-            pagination={{ clickable: true }}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            modules={[Pagination, Autoplay]} // Autoplay যোগ করা হলো
-            className="mySwiper"
-          >
-            {testimonials.map((t) => (
-              <SwiperSlide key={t.id}>
-                <div className="bg-text-White rounded-8px p-6 shadow-box-md">
-                  <h5 className="text-2xl font-bold text-text-Primary mb-2">
-                    {t.name}
-                  </h5>
-
-                  <div className="flex items-center mb-3 text-text-Star">
-                    {Array.from({ length: t.rating }).map((_, i) => (
-                      <FaStar key={i} className="mr-1" />
-                    ))}
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+            el: ".custom-pagination",
+          }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 2 },
+          }}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          {testimonials.map((t) => (
+            <SwiperSlide className="p-5" key={t.id}>
+              <div className="relative bg-text-White rounded-lg p-8 shadow-card2">
+                {/* Profile Section */}
+                <div className="flex items-center gap-4 mb-4">
+                  <img
+                    src={t.img}
+                    alt={t.name}
+                    className="w-14 h-14 rounded-full object-cover"
+                  />
+                  <div>
+                    <h5 className="text-lg font-bold text-text-Primary">
+                      {t.name}
+                    </h5>
+                    <div className="flex text-text-Star">
+                      {Array.from({ length: t.rating }).map((_, i) => (
+                        <FaStar key={i} className="mr-1" />
+                      ))}
+                    </div>
                   </div>
-
-                  <p className="text-text-Secondary mb-4">{t.text}</p>
-
-                  <p className="text-sm text-background">{t.role}</p>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
 
-        {/* ====================
-            Large and up (lg+)
-            - Left image, center slider (with images + details), right image
-           ==================== */}
-        <div className="hidden lg:flex justify-between items-center gap-6">
-          {/* Left static image */}
-          <div className="w-1/5 flex items-center">
-            <img
-              src={client1}
-              alt="client left"
-              className="w-full h-auto rounded-6px object-cover"
-            />
-          </div>
+                {/* Feedback Text */}
+                <p className="text-text-Secondary mb-6">{t.text}</p>
 
-          {/* Center slider */}
-          <div className="w-3/5">
-            <Swiper
-              slidesPerView={1}
-              spaceBetween={20}
-              loop={true}
-              pagination={{ clickable: true }}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              modules={[Pagination, Autoplay]} // Autoplay এখানে ও
-              className="mySwiper"
-            >
-              {testimonials.map((t) => (
-                <SwiperSlide key={t.id}>
-                  <div className="flex items-center justify-center bg-text-White rounded-8px shadow-box-md overflow-hidden">
-                    {/* Image (left part of slide content) */}
-                    <div className="w-[35%] flex items-center justify-center p-6">
-                      <img
-                        src={t.image}
-                        alt={t.name}
-                        className="h-[300px] w-auto object-cover rounded-6px"
-                      />
-                    </div>
+                {/* Role */}
+                <p className="text-sm text-background font-semibold">
+                  {t.role}
+                </p>
 
-                    {/* Text content */}
-                    <div className="w-[65%] px-6 py-8">
-                      <h5 className="text-2xl font-bold text-gray-900 pb-2">
-                        {t.name}
-                      </h5>
+                {/* Quote Icon */}
+                <div className="absolute top-5 right-5 text-6xl text-text-Secondary opacity-10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M10 11H7v3H5v-3H2V9h3V6h2v3h3zm10 0h-3v3h-2v-3h-3V9h3V6h2v3h3z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-                      <div className="flex gap-x-2 items-center text-yellow-400 pb-3">
-                        {Array.from({ length: t.rating }).map((_, i) => (
-                          <FaStar key={i} />
-                        ))}
-                      </div>
-
-                      <p className="text-gray-700 mb-4">{t.text}</p>
-
-                      <div className="flex items-center gap-x-2 pt-3">
-                        <div className="bg-text-Secondary w-10 h-[2px]" />
-                        <p className="text-text-Secondary">{t.role}</p>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-
-          {/* Right static image */}
-          <div className="w-1/5 flex items-center">
-            <img
-              src={client1}
-              alt="client right"
-              className="w-full h-auto rounded-6px object-cover"
-            />
-          </div>
-        </div>
+        {/* Custom Pagination */}
+        <div className="custom-pagination flex justify-center gap-x-2 mt-8"></div>
       </div>
     </div>
   );
