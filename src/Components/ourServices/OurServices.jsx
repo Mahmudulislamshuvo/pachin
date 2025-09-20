@@ -1,52 +1,49 @@
-import { GiFactory, GiHook, GiMonoWheelRobot } from "react-icons/gi";
-import { GrUserWorker } from "react-icons/gr";
-import { MdOutlineLocalGasStation } from "react-icons/md";
-import { SlChemistry } from "react-icons/sl";
+import { FaHammer, FaHeadset, FaMobileAlt, FaUsers, FaTasks, FaDraftingCompass } from "react-icons/fa";
 import PageHeader from "../CommonComponents/PageHeader";
 
 const OurServices = () => {
   const servicesData = [
     {
       id: 1,
-      icon: MdOutlineLocalGasStation,
-      title: "Petroleum and Gas",
+      icon: FaHammer,
+      title: "Renovation and restoration",
       description:
-        "Printer took a galley of type and scrambled it to make a type specimenbook. It has survived not only nine",
+        "Transform your space. Whether it's a single room or a full-scale renovation, we'll work with you to create a beautiful and functional space that you'll love.",
     },
     {
       id: 2,
-      icon: GiHook,
-      title: "Industrial Solutions",
+      icon: FaHeadset,
+      title: "Continuous Support",
       description:
-        "We provide top-notch industrial services ensuring sustainable development with innovative technologies.",
+        "Your satisfaction is our priority. Our dedicated team provides continuous support throughout the entire process, from initial concept to final installation.",
     },
     {
       id: 3,
-      icon: SlChemistry,
-      title: "Solar Energy",
+      icon: FaMobileAlt,
+      title: "App Access",
       description:
-        "Harnessing the power of the sun to create clean and affordable renewable energy solutions.",
+        "Stay connected to your project. With our exclusive app, you can track progress, communicate with our team, and access all your project details anytime, anywhere.",
     },
     {
       id: 4,
-      icon: GiFactory,
-      title: "Coal Mining",
+      icon: FaUsers,
+      title: "Consulting",
       description:
-        "Reliable coal mining and supply chain management with eco-friendly practices.",
+        "Expert guidance for your vision. Our experienced consultants will help you navigate the complexities of your project, ensuring a smooth and successful outcome.",
     },
     {
       id: 5,
-      icon: GrUserWorker,
-      title: "Oil Refinery",
+      icon: FaTasks,
+      title: "Project Management",
       description:
-        "State-of-the-art oil refining services to deliver high-quality fuel and petroleum products.",
+        "On time and on budget. Our meticulous project managers will oversee every detail of your project, ensuring it's completed to the highest standards, on time and within budget.",
     },
     {
       id: 6,
-      icon: GiMonoWheelRobot,
-      title: "Wind Energy",
+      icon: FaDraftingCompass,
+      title: "Architectural Solutions",
       description:
-        "Producing green energy through modern wind turbines ensuring a sustainable future.",
+        "Innovative design for modern living. We create cutting-edge architectural solutions that are both beautiful and sustainable, tailored to your lifestyle and needs.",
     },
   ];
 
@@ -67,8 +64,7 @@ const OurServices = () => {
         <div className="pb-10">
           <PageHeader
             title="Our Services"
-            desc=" Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard"
+            desc="From concept to creation, we offer a complete range of services to bring your vision to life. Discover how we can help you create the space of your dreams."
             titlecss="text-text-White"
             desccss="text-text-White"
           />

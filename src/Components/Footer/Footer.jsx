@@ -1,11 +1,10 @@
-import { ImFacebook } from "react-icons/im";
-import logo from "../../assets/logo.png";
 import {
   FaFacebookF,
   FaInstagram,
   FaPinterestP,
   FaTwitter,
 } from "react-icons/fa";
+import Logo from "../CommonComponents/Logo";
 
 const Footer = () => {
   return (
@@ -23,7 +22,7 @@ const Footer = () => {
       <div className="container relative z-10">
         {/*  Note:If don't use relative contents are go down inside the layer z-index not working without relative */}
         <div className="py-20 text-text-White text-center flex flex-col items-center justify-center px-5 md:px-20">
-          <img src={logo} alt="logo" className="mb-8" />
+          <Logo css="text-White" />
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

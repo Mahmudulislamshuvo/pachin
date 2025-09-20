@@ -1,5 +1,5 @@
 const PageHeader = ({
-  title = "Welcome to Pachin Ltd.",
+  title = "Welcome to Style Museum",
   desc = "Lorem Ipsum is simply dummy text of the printing and typesetting",
   titlecss = "text-text-Primary",
   desccss = "text-text-Secondary",

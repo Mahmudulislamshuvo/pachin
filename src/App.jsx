@@ -11,7 +11,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import OurServices from "./Components/ourServices/OurServices";
 import SuccessGlance from "./Components/SuccessInaGlance/SuccessGlance";
 import TopProjects from "./Components/TopProjects/TopProjects";
-import WelcomeToPachin from "./Components/WelcomeToPachin/WelcomeToPachin";
+import WelcomeToStyleMuseum from "./Components/WelcomeToStyleMuseum/WelcomeToStyleMuseum";
 import WhyWeAreBest from "./Components/WhyWeAreBest/WhyWeAreBest";
 import AboutUS from "./Components/Pages/AboutUs/AboutUS";
 import Footer2 from "./Components/Pages/Common//Footer";
@@ -29,7 +29,7 @@ const App = () => {
       {page === "home" && (
         <>
           <Banner />
-          <WelcomeToPachin />
+          <WelcomeToStyleMuseum />
           <MakeThingEasy />
           <OurServices />
           <TopProjects />

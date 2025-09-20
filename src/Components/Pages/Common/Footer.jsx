@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-text-Primary text-text-White pt-30 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {/* Column 1: Pachin */}
+        {/* Column 1: Style Museum */}
         <div>
           <img src={logo} alt="Footer2logo" className="mb-4" />
           <p className="text-sm text-text-White/80 mb-6">

@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import projectImage from "../../assets/topProjects/project-item-5.jpg";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { IoArrowRedoSharp } from "react-icons/io5";
 import { useState } from "react";
@@ -18,58 +17,45 @@ const TopProjects = () => {
   const projects = [
     {
       id: 1,
-      title: "Mountain Adventure",
-      subtitle: "Explore the heights",
-      description: "A breathtaking journey through mountain peaks.",
-      imageUrl: projectImage,
+      title: "Modern Living Room",
+      subtitle: "Chic & Comfortable",
+      imageUrl: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
     },
     {
       id: 2,
-      title: "Urban Exploration",
-      subtitle: "Cityscapes at night",
-      description: "Capturing the vibrant life of the city after dark.",
-      imageUrl:
-        "https://images.pexels.com/photos/12840685/pexels-photo-12840685.jpeg",
+      title: "Chic Bedroom Design",
+      subtitle: "Elegant & Serene",
+      imageUrl: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
     },
     {
       id: 3,
-      title: "Serene Wilderness",
-      subtitle: "Tranquil landscapes",
-      description: "Peaceful moments in untouched nature.",
-      imageUrl:
-        "https://images.pexels.com/photos/31932274/pexels-photo-31932274.jpeg",
+      title: "Minimalist Office Space",
+      subtitle: "Clean & Productive",
+      imageUrl: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg",
     },
     {
       id: 4,
-      title: "Coffee & Work",
-      subtitle: "Morning ritual",
-      description: "Productive mornings fueled by caffeine.",
-      imageUrl:
-        "https://images.pexels.com/photos/32263469/pexels-photo-32263469.jpeg",
+      title: "Cozy Reading Nook",
+      subtitle: "Quiet & Quaint",
+      imageUrl: "https://images.pexels.com/photos/6492403/pexels-photo-6492403.jpeg",
     },
     {
       id: 5,
-      title: "Design Studio",
-      subtitle: "Creativity unleashed",
-      description: "Where ideas come to life in creative layouts.",
-      imageUrl:
-        "https://images.pexels.com/photos/32946073/pexels-photo-32946073.jpeg",
+      title: "Elegant Dining Area",
+      subtitle: "Stylish & Sophisticated",
+      imageUrl: "https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg",
     },
     {
       id: 6,
-      title: "Cozy Workspace",
-      subtitle: "Work from home",
-      description: "Comfortable, stylish home office setup.",
-      imageUrl:
-        "https://images.pexels.com/photos/32861266/pexels-photo-32861266.jpeg",
+      title: "Stylish Workspace",
+      subtitle: "Modern & Functional",
+      imageUrl: "https://images.pexels.com/photos/102129/pexels-photo-102129.jpeg",
     },
     {
       id: 7,
-      title: "Tech Setup",
-      subtitle: "Modern tools",
-      description: "High-tech environment for developers and creators.",
-      imageUrl:
-        "https://images.pexels.com/photos/19506331/pexels-photo-19506331.jpeg",
+      title: "Contemporary Kitchen",
+      subtitle: "Sleek & Smart",
+      imageUrl: "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg",
     },
   ];
 
@@ -78,9 +64,8 @@ const TopProjects = () => {
       <div className="py-20 md:py-40">
         <div className="px-5 md:px-85 pb-10">
           <PageHeader
-            title="Welcome to Pachin Ltd."
-            desc=" Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard"
+            title="Our Portfolio"
+            desc="Explore a selection of our finest work. Each project is a testament to our commitment to quality, creativity, and client satisfaction."
           />
         </div>
         <div className="px-5 md:px-0">

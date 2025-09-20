@@ -26,7 +26,7 @@ const WeEnsureQuality = () => {
           <div className="w-[52%]">
             <div className="">
               <h5 className="text-text-Secondary uppercase">
-                Welcome to the Pachin
+                Welcome to Style Museum
               </h5>
               <h3 className="text-4xl font-bold uppercase pt-3 pb-5">
                 <span className="text-background">We Ensure The Quality</span>{" "}
@@ -62,10 +62,6 @@ const WeEnsureQuality = () => {
                 </div>
               </div>
               <div>
-                <img
-                  src="https://themeforest.kreativdev.com/pachin/assets/images/signature.png"
-                  alt="https://themeforest.kreativdev.com/pachin/assets/images/signature.png"
-                />
               </div>
             </div>
           </div>
