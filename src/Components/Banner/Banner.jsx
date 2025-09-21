@@ -16,12 +16,11 @@ const Banner = () => {
               <h1 className="text-text-White text-2xl md:text-6xl font-bold px-6 md:px-0">
                 Trusted Factory Solutions
                 <br className="sm:hidden" />
-                <span className="text-background pl-3">Since 1995</span>
+                <span className="text-background pl-3">Since 2013</span>
               </h1>
               <p className="text-text-White pt-4 px-5 md:pt-8 md:px-40">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown.
+                Delivering premium knit & woven apparel from Bangladesh with
+                integrity, craftsmanship, and global compliance.
               </p>
               <button className="py-3 px-8 text-text-White bg-background rounded-24px font-medium mt-8">
                 LEARN MORE

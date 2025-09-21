@@ -8,7 +8,7 @@ const WelcomeToStyleMuseum = () => {
         <div>
           <PageHeader
             title="Style Museum: Renown Fashion House in Bangladesh"
-            desc="We are a passionate team of designers and architects dedicated to creating beautiful and functional spaces. We offer a comprehensive suite of professional services to a diverse clientele, including homeowners and commercial developers."
+            desc="Style Museum Ltd. is a full‐service knit & woven garments manufacturing unit based in Dhaka, Bangladesh. Since commencing operations in 2013, we’ve grown from a small production unit into a modern facility, serving both local and international clients with high‐quality, reliable apparel solutions."
           />
         </div>
 
@@ -17,14 +17,16 @@ const WelcomeToStyleMuseum = () => {
             <div className="relative flex flex-col md:flex-row items-center">
               {/* Card 1 */}
               <div className="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-5 md:my-8 relative">
-                <div className="bg-text-Primary overflow-hidden py-5 md:py-20">
+                {/* below py should 20 here */}
+                <div className="bg-text-Primary overflow-hidden py-5 md:py-23">
                   <div className="text-center flex flex-col items-center justify-center p-6">
                     <FaPaintBrush className="h-20 w-20 text-background" />
                     <h3 className="text-text-White text-2xl font-bold">
-                      Bespoke Designs
+                      Elegant Design
                     </h3>
                     <p className="text-text-Secondary px-10 pt-4">
-                      We create custom designs that are tailored to your unique style and needs. Our team will work with you to bring your vision to life.
+                      We provide complete product design & development support
+                      for global brands.
                     </p>
                   </div>
                 </div>
@@ -40,10 +42,11 @@ const WelcomeToStyleMuseum = () => {
                   <div className="text-center flex flex-col items-center justify-center p-6">
                     <FaRegGem className="h-20 w-20 text-text-White" />
                     <h3 className="text-text-White text-2xl font-bold">
-                      Quality Craftsmanship
+                      Quality & Sustainability
                     </h3>
                     <p className="text-text-White px-10 pt-4">
-                      We use only the highest quality materials and work with the best craftsmen to ensure that your project is built to last.
+                      We ensure OEKO-TEX & GOTS certified materials, top-class
+                      machines, and strict QC for premium quality.
                     </p>
                   </div>
                 </div>
@@ -55,10 +58,11 @@ const WelcomeToStyleMuseum = () => {
                   <div className="text-center flex flex-col items-center justify-center p-6">
                     <FaRegStar className="h-20 w-20 text-background" />
                     <h3 className="text-text-White text-2xl font-bold">
-                      Exceptional Service
+                      Responsive Service
                     </h3>
                     <p className="text-text-Secondary px-10 pt-4">
-                      We are committed to providing our clients with an exceptional experience from start to finish. Your satisfaction is our top priority.
+                      From sampling to delivery, we provide clear communication,
+                      on-time delivery, and client-focused solutions.
                     </p>
                   </div>
                 </div>

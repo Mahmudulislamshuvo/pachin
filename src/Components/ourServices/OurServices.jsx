@@ -1,4 +1,11 @@
-import { FaHammer, FaHeadset, FaMobileAlt, FaUsers, FaTasks, FaDraftingCompass } from "react-icons/fa";
+import {
+  FaHammer,
+  FaHeadset,
+  FaMobileAlt,
+  FaUsers,
+  FaTasks,
+  FaDraftingCompass,
+} from "react-icons/fa";
 import PageHeader from "../CommonComponents/PageHeader";
 
 const OurServices = () => {
@@ -6,7 +13,7 @@ const OurServices = () => {
     {
       id: 1,
       icon: FaHammer,
-      title: "Renovation and restoration",
+      title: "Knit & Woven Garment Manufacturing",
       description:
         "Transform your space. Whether it's a single room or a full-scale renovation, we'll work with you to create a beautiful and functional space that you'll love.",
     },
@@ -20,7 +27,7 @@ const OurServices = () => {
     {
       id: 3,
       icon: FaMobileAlt,
-      title: "App Access",
+      title: "Packaging & Logistics",
       description:
         "Stay connected to your project. With our exclusive app, you can track progress, communicate with our team, and access all your project details anytime, anywhere.",
     },
@@ -34,14 +41,14 @@ const OurServices = () => {
     {
       id: 5,
       icon: FaTasks,
-      title: "Project Management",
+      title: "Printing & Embroidery",
       description:
         "On time and on budget. Our meticulous project managers will oversee every detail of your project, ensuring it's completed to the highest standards, on time and within budget.",
     },
     {
       id: 6,
       icon: FaDraftingCompass,
-      title: "Architectural Solutions",
+      title: "Washing & Finishing",
       description:
         "Innovative design for modern living. We create cutting-edge architectural solutions that are both beautiful and sustainable, tailored to your lifestyle and needs.",
     },
@@ -64,7 +71,7 @@ const OurServices = () => {
         <div className="pb-10">
           <PageHeader
             title="Our Services"
-            desc="From concept to creation, we offer a complete range of services to bring your vision to life. Discover how we can help you create the space of your dreams."
+            desc="We deliver a wide range of apparel manufacturing and support services, from design to delivery."
             titlecss="text-text-White"
             desccss="text-text-White"
           />

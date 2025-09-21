@@ -19,7 +19,7 @@ const SuccessGlance = () => {
       id: 3,
       icon: <LuNotepadText className="w-20 h-20 text-background" />,
       number: "25+",
-      label: "Awards Won",
+      label: "Skilled Professionals",
     },
     {
       id: 4,

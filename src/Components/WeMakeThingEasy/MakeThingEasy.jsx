@@ -1,5 +1,4 @@
 import { LuMedal } from "react-icons/lu";
-import image from "../../assets/makeThingEasy/easy-thumb.jpg";
 
 const MakeThingEasy = () => {
   return (
@@ -7,7 +6,10 @@ const MakeThingEasy = () => {
       <div className="py-15 md:py-40 relative px-5 md:px-0">
         <div className="flex flex-col md:flex-row gap-x-10">
           <div className="w-full md:w-[40%]">
-            <img src={image} alt="image" />
+            <img
+              src="https://images.pexels.com/photos/2647098/pexels-photo-2647098.jpeg"
+              alt="image"
+            />
           </div>
           <div className="w-full md:w-[58%] ">
             <div className="pr-0 pb-7 md:pr-10 md:pb-10">
@@ -28,11 +30,11 @@ const MakeThingEasy = () => {
                   01
                 </span>
                 <h3 className="mb-1 text-2xl font-semibold text-text-Primary">
-                  This is a simple title for text one
+                  Quality & Expertise
                 </h3>
                 <p className="text-lg font-normal text-text-Secondary">
-                  Porem Ipsum is the simpl dummy text of the printing and new
-                  type setting industry.
+                  top‐call Japan origin swing machines, modern technology &
+                  stringent QC protocols ensure consistent product standards.
                 </p>
               </li>
 
@@ -42,11 +44,11 @@ const MakeThingEasy = () => {
                   02
                 </span>
                 <h3 className="mb-1 text-2xl font-semibold text-text-Primary">
-                  This is a simple title for text two
+                  Diverse Capabilities
                 </h3>
                 <p className="text-lg font-normal text-text-Secondary">
-                  Next lorem Ipsum is the simpl dummy text of the printing and
-                  new type setting industry.
+                  knit & woven garments, digital & screen printing, embroidery,
+                  finishing, packaging.
                 </p>
               </li>
 
@@ -56,11 +58,12 @@ const MakeThingEasy = () => {
                   03
                 </span>
                 <h3 className="mb-1 text-2xl font-semibold text-text-Primary">
-                  This is a simple title for text three
+                  Sustainability & Compliance
                 </h3>
                 <p className="text-lg font-normal text-text-Secondary">
-                  Darem Ipsum is the simpl dummy text of the printing and new
-                  type setting industry.
+                  working with OEKO-TEX, GOTS certified mills for
+                  dyeing/knitting subcontractors; responsible practices in labor
+                  and environment.
                 </p>
               </li>
             </ol>
@@ -73,7 +76,7 @@ const MakeThingEasy = () => {
             </span>
             <span>
               <h4 className="text-text-Primary text-2xl font-bold">
-                25 Years of Experience
+                10+ Years of Experience
               </h4>
               <p className="text-text-Secondary text-lg">
                 Lorem is the dummy text
@@ -86,7 +89,7 @@ const MakeThingEasy = () => {
             </span>
             <span>
               <h4 className="text-text-Primary text-2xl font-bold">
-                25 Years of Experience
+                25+ Skilled Professionals
               </h4>
               <p className="text-text-Secondary text-lg">
                 Lorem is the dummy text
@@ -99,7 +102,7 @@ const MakeThingEasy = () => {
             </span>
             <span>
               <h4 className="text-text-Primary text-2xl font-bold">
-                25 Years of Experience
+                1540+ Products Delivered
               </h4>
               <p className="text-text-Secondary text-lg">
                 Lorem is the dummy text

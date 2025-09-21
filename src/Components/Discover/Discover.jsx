@@ -1,5 +1,3 @@
-import image from "../../Assets/makeThingEasy/easy-thumb.jpg";
-
 const Discover = () => {
   return (
     <div className="bg-bg-blog">
@@ -7,7 +5,10 @@ const Discover = () => {
         <div className="py-20 md:py-40 relative">
           <div className="md:flex gap-x-10">
             <div className="w-full md:w-[40%] p-5 md:p-0">
-              <img src={image} alt="image" />
+              <img
+                src="https://images.pexels.com/photos/9178984/pexels-photo-9178984.jpeg"
+                alt="image"
+              />
             </div>
             <div className="w-full md:w-[58%] pl-5">
               <div className="pr-10 pb-10">
@@ -16,9 +17,9 @@ const Discover = () => {
                   of Grow a Factory
                 </h3>
                 <p className="text-text-Secondary text-lg pt-5">
-                  Simple Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown.
+                  With our modern facilities, certified fabric sourcing, and
+                  experienced workforce, Style Museum Ltd. ensures top-quality
+                  knit & woven garments for both local and global brands.
                 </p>
               </div>
               <div>
