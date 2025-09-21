@@ -11,7 +11,7 @@ const Navbar = ({ setPage }) => {
   };
 
   return (
-    <div className="bg-[linear-gradient(65deg,theme(colors.text.White)_30%,theme(colors.background)_30%)] max-sm:bg-[linear-gradient(65deg,theme(colors.text.White)_70%,theme(colors.background)_30%)] max-md:bg-[linear-gradient(65deg,theme(colors.text.White)_70%,theme(colors.background)_30%)] py-2 md:py-4 max-sm:px-5">
+    <div className="bg-[linear-gradient(65deg,theme(colors.text.White)_30%,theme(colors.background)_30%)] max-sm:bg-[linear-gradient(65deg,theme(colors.text.White)_70%,theme(colors.background)_30%)] max-md:bg-[linear-gradient(65deg,theme(colors.text.White)_70%,theme(colors.background)_30%)] py-2 md:py-4 max-sm:px-5 shadow-card2">
       <div className="container">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
