@@ -8,7 +8,6 @@ import {
 import PageHeader from "../CommonComponents/PageHeader";
 import teamimageOne from "../../assets/Images/team1.jpg";
 import teamimageTwo from "../../assets/Images/team3.jpg";
-import teamimageThree from "../../assets/Images/Team4.jpg";
 
 const MeatOurTeam = () => {
   const teamMembers = [
@@ -31,7 +30,7 @@ const MeatOurTeam = () => {
       role: "Architect",
       name: "David Smith",
       desc: "Passionate about modern designs that blend functionality with aesthetics.",
-      img: teamimageThree,
+      img: teamimageTwo,
     },
   ];
 
