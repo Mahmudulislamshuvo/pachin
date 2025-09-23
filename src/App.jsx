@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef } from "react";
 import Banner from "./Components/Banner/Banner";
 import Blog from "./Components/Blog/Blog";
 import ClientsFeadback from "./Components/ClientsFeadback/ClientsFeadback";
@@ -14,41 +14,74 @@ import TopProjects from "./Components/TopProjects/TopProjects";
 import WelcomeToStyleMuseum from "./Components/WelcomeToStyleMuseum/WelcomeToStyleMuseum";
 import WhyWeAreBest from "./Components/WhyWeAreBest/WhyWeAreBest";
 import AboutUS from "./Components/Pages/AboutUs/AboutUS";
-import Footer2 from "./Components/Pages/Common//Footer";
 import ServiceDetails from "./Components/Pages/ServiceDetails/ServiceDetails";
 
 const App = () => {
-  const [page, setPage] = useState("home");
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const serviceRef = useRef(null);
+  const blogRef = useRef(null);
+  const contactRef = useRef(null);
+
+  // scroll function
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div>
+      {/* Navbar */}
       <div className="sticky top-0 z-50">
-        <Navbar setPage={setPage} />
+        <Navbar
+          scrollToSection={scrollToSection}
+          refs={{
+            homeRef,
+            aboutRef,
+            serviceRef,
+            blogRef,
+            contactRef,
+          }}
+        />
       </div>
 
-      {page === "home" && (
-        <>
-          <Banner />
-          <WelcomeToStyleMuseum />
-          <MakeThingEasy />
-          <OurServices />
-          <TopProjects />
-          <SuccessGlance />
-          <Discover />
-          <MeatOurTeam />
-          <WhyWeAreBest />
-          <ContactUs />
-          <ClientsFeadback />
-          <Blog />
-          <Footer />
-        </>
-      )}
+      {/* Home Section */}
+      <div ref={homeRef} className="scroll-mt-20">
+        <Banner />
+        <WelcomeToStyleMuseum />
+        <MakeThingEasy />
+        <OurServices />
+        <TopProjects />
+        <SuccessGlance />
+        <Discover />
+        <MeatOurTeam />
+        <WhyWeAreBest />
+        <ClientsFeadback />
+      </div>
 
-      {page === "aboutus" && <AboutUS setPage={setPage} />}
-      {page === "service" && <ServiceDetails setPage={setPage} />}
-      {page === "projects" && <TopProjects />}
-      {page === "contact" && <ContactUs />}
-      {page == !"home" && <Footer2 />}
+      {/* About Section */}
+      <div ref={aboutRef} className="scroll-mt-25">
+        <AboutUS />
+      </div>
+
+      {/* Service Section */}
+      <div ref={serviceRef} className="scroll-mt-20">
+        <ServiceDetails />
+      </div>
+
+      <TopProjects />
+
+      {/* Blog Section */}
+      <div ref={blogRef} className="scroll-mt-20">
+        <Blog />
+      </div>
+
+      {/* Contact Section */}
+      <div ref={contactRef} className="scroll-mt-20">
+        <ContactUs />
+      </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

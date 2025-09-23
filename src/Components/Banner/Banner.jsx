@@ -1,10 +1,12 @@
+import bannerimage from "../../assets/Images/banner.jpg";
+
 const Banner = () => {
   return (
     <div>
       <div className="relative">
         {/* Background Image */}
         <img
-          src="https://images.pexels.com/photos/31750956/pexels-photo-31750956.jpeg"
+          src={bannerimage}
           alt="banner"
           className="w-full h-[100vh] object-cover"
         />

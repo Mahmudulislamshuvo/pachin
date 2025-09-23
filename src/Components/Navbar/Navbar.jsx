@@ -2,12 +2,17 @@ import { useState } from "react";
 import { HiChevronDown, HiMenu, HiX } from "react-icons/hi";
 import Logo from "../CommonComponents/Logo";
 
-const Navbar = ({ setPage }) => {
+const Navbar = ({ scrollToSection, refs }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
 
   const toggleMenu = (menu) => {
     setOpenMenu(openMenu === menu ? null : menu);
+  };
+
+  const handleNavClick = (ref) => {
+    scrollToSection(ref);
+    setIsOpen(false); // mobile menu বন্ধ হয়ে যাবে
   };
 
   return (
@@ -22,16 +27,27 @@ const Navbar = ({ setPage }) => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-x-5">
             <ul className="flex gap-8 text-[16px] text-text-White font-medium uppercase">
+              {/* Home */}
               <li
-                onClick={() => setPage("aboutus")}
+                onClick={() => handleNavClick(refs.homeRef)}
                 className="cursor-pointer transition-colors"
               >
-                About Us
+                Home
+              </li>
+              {/* About */}
+              <li
+                onClick={() => handleNavClick(refs.aboutRef)}
+                className="cursor-pointer transition-colors"
+              >
+                About
               </li>
 
               {/* Services */}
-              <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
-                Services
+              <li
+                onClick={() => handleNavClick(refs.serviceRef)}
+                className="cursor-pointer transition-colors relative group flex items-center gap-x-1"
+              >
+                Our Services
                 {/* <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
@@ -50,28 +66,11 @@ const Navbar = ({ setPage }) => {
                 </ul> */}
               </li>
 
-              {/* Project */}
-              <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
-                Project
-                {/* <HiChevronDown className="text-lg" />
-                <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Project 1
-                  </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Project 2
-                  </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Project 3
-                  </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Project 4
-                  </li>
-                </ul> */}
-              </li>
-
               {/* Blog */}
-              <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
+              <li
+                onClick={() => handleNavClick(refs.blogRef)}
+                className="cursor-pointer transition-colors relative group flex items-center gap-x-1"
+              >
                 Blog
                 {/* <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
@@ -89,28 +88,28 @@ const Navbar = ({ setPage }) => {
                   </li>
                 </ul> */}
               </li>
-
-              {/* Pages */}
-              <li className="cursor-pointer transition-colors relative group flex items-center gap-x-1">
-                Pages
+              {/* Contact Us */}
+              <li
+                onClick={() => handleNavClick(refs.contactRef)}
+                className="cursor-pointer transition-colors relative group flex items-center gap-x-1"
+              >
+                Contact Us
                 {/* <HiChevronDown className="text-lg" />
                 <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Pages 1
+                    Blog 1
                   </li>
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Pages 2
+                    Blog 2
                   </li>
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Pages 3
+                    Blog 3
                   </li>
                   <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Pages 4
+                    Blog 4
                   </li>
                 </ul> */}
               </li>
-
-              <li className="cursor-pointer transition-colors">Contact</li>
             </ul>
             <button className="bg-text-White text-background py-3 px-6 rounded-24px font-medium hover:shadow-card transition">
               GET A QUOTE
@@ -140,7 +139,7 @@ const Navbar = ({ setPage }) => {
   }`}
       >
         <ul className="flex flex-col gap-y-2 uppercase font-medium">
-          {/* Home */}
+          {/* Home
           <li
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleMenu("home")}
@@ -151,21 +150,13 @@ const Navbar = ({ setPage }) => {
                 openMenu === "home" ? "rotate-180" : ""
               }`}
             />
-          </li>
-          <div
-            className={`pl-6 space-y-2 text-sm transition-all duration-300 ease-in-out overflow-hidden ${
-              openMenu === "home"
-                ? "max-h-[500px] opacity-100"
-                : "max-h-0 opacity-0"
-            }`}
-          >
-            <li className="hover:text-text-Secondary">Home 1</li>
-            <li className="hover:text-text-Secondary">Home 2</li>
-            <li className="hover:text-text-Secondary">Home 3</li>
-          </div>
+          </li> */}
 
           {/* About */}
-          <li className="hover:text-text-Secondary transition-colors">
+          <li
+            onClick={() => handleNavClick(refs.aboutRef)}
+            className="hover:text-text-Secondary transition-colors"
+          >
             About Us
           </li>
 
