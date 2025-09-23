@@ -1,3 +1,5 @@
+import image from "../../assets/Images/discover.jpg";
+
 const Discover = () => {
   return (
     <div className="bg-bg-blog">
@@ -6,8 +8,9 @@ const Discover = () => {
           <div className="md:flex gap-x-10">
             <div className="w-full md:w-[40%] p-5 md:p-0">
               <img
-                src="https://images.pexels.com/photos/9178984/pexels-photo-9178984.jpeg"
-                alt="image"
+                src={image}
+                alt="Discoverimage"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="w-full md:w-[58%] pl-5">

@@ -1,4 +1,5 @@
 import { LuNotepadText } from "react-icons/lu";
+import image from "../../../assets/Images/SuccessCouts.jpg";
 
 const SuccessCount = () => {
   const stats = [
@@ -29,24 +30,22 @@ const SuccessCount = () => {
   ];
 
   return (
-    <div
-      className="relative bg-fixed bg-center bg-cover"
-      style={{
-        backgroundImage:
-          "url('https://images.pexels.com/photos/33660828/pexels-photo-33660828.jpeg')",
-      }}
-    >
-      {/* Overlay Layer */}
-      <div className="absolute inset-0 bg-bannerLayer opacity-80"></div>
+    <div className="relative">
+      {/* Fixed Image */}
+      <img
+        src={image}
+        alt="Success Background"
+        className="w-full h-[400px] object-cover"
+      />
 
       {/* Content Layer */}
-      <div className="relative container">
-        <div className="py-30">
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="container">
           <div className="md:flex md:justify-between md:items-center md:gap-x-5 mx-5 md:mx-0 space-y-5 md:space-y-0">
             {stats.map((item) => (
               <div
                 key={item.id}
-                className="py-12 px-10 border border-text-Secondary flex flex-col items-center justify-center gap-5 w-full md:w-1/4 bg-text-White/10 backdrop-blur-sm"
+                className="py-12 px-10 border border-text-Secondary flex flex-col items-center justify-center gap-5 w-full md:w-1/4 bg-white/80 backdrop-blur-sm"
               >
                 {item.icon}
                 <div className="text-center">

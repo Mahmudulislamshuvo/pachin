@@ -1,4 +1,5 @@
-import { IoCall } from "react-icons/io5";
+import image1 from "../../../assets/Images/WeEnsure1.jpg";
+import image2 from "../../../assets/Images/WeEnsure2.jpg";
 
 const WeEnsureQuality = () => {
   return (
@@ -9,14 +10,14 @@ const WeEnsureQuality = () => {
           <div className="w-[45%]">
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/29498845/pexels-photo-29498845.jpeg"
-                alt="https://images.pexels.com/photos/29498845/pexels-photo-29498845.jpeg"
+                src={image1}
+                alt="WeEnsure1"
                 className="h-[500px] w-[400px] object-cover"
               />
 
               <img
-                src="https://images.pexels.com/photos/19505711/pexels-photo-19505711.jpeg"
-                alt="https://images.pexels.com/photos/33629824/pexels-photo-33629824.jpeg"
+                src={image2}
+                alt="WeEnsure2"
                 className="h-[500px] w-[400px] object-cover absolute top-20 left-20 p-2 bg-text-White rounded-6px"
               />
             </div>
@@ -61,8 +62,7 @@ const WeEnsureQuality = () => {
                   <p className="text-text-Secondary">Project Managers</p>
                 </div>
               </div>
-              <div>
-              </div>
+              <div></div>
             </div>
           </div>
         </div>

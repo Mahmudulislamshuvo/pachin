@@ -6,24 +6,19 @@ import SuccessCount from "./SuccessCount";
 import Testimonial from "./Testimonial";
 import TheBestReliable from "./TheBestReliable";
 import WeEnsureQuality from "./WeEnsureQuality";
+import image from "../../../assets/Images/aboutusBredcrumb.jpg";
 
 const AboutUS = ({ setPage }) => {
   return (
     <div>
-      <Breadcrumb
-        image={
-          "https://images.pexels.com/photos/33660828/pexels-photo-33660828.jpeg"
-        }
-        title={"About Us"}
-        setPage={setPage}
-      />
+      <Breadcrumb image={image} title={"About Us"} setPage={setPage} />
       <TheBestReliable />
       <WeEnsureQuality />
       <SuccessCount />
       <HowWeWork />
       <Testimonial />
-      <MeetWithOurLeaders />
-      <Footer />
+      {/* <MeetWithOurLeaders /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

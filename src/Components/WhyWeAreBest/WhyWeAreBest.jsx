@@ -1,5 +1,6 @@
 import PageHeader from "../CommonComponents/PageHeader";
 import { ImCheckmark } from "react-icons/im";
+import backgroundImage from "../../assets/Images/whyWearebest.jpg";
 
 const WhyWeAreBest = () => {
   const mockData = [
@@ -40,8 +41,8 @@ const WhyWeAreBest = () => {
       <div className="relative">
         {/* Background image */}
         <img
-          src="https://images.pexels.com/photos/31525648/pexels-photo-31525648.jpeg"
-          alt="img"
+          src={backgroundImage}
+          alt="whyWearebestimg"
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Overlay */}

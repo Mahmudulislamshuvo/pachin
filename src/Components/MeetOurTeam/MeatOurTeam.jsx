@@ -6,6 +6,9 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import PageHeader from "../CommonComponents/PageHeader";
+import teamimage1 from "../../assets/Images/team1.jpg";
+import teamimage2 from "../../assets/Images/team3.jpg";
+import teamimage3 from "../../assets/Images/team4.jpg";
 
 const MeatOurTeam = () => {
   const teamMembers = [
@@ -14,21 +17,21 @@ const MeatOurTeam = () => {
       role: "Project Manager",
       name: "Fardian Jabinsha",
       desc: "Printer took a galley of type and scrambled it to make a type specimenbook.",
-      img: "https://images.pexels.com/photos/32947545/pexels-photo-32947545.jpeg",
+      img: teamimage1,
     },
     {
       id: 2,
       role: "Senior Engineer",
       name: "Maria Johnson",
       desc: "Experienced in managing large construction projects with innovative solutions.",
-      img: "https://images.pexels.com/photos/32947545/pexels-photo-32947545.jpeg",
+      img: teamimage2,
     },
     {
       id: 3,
       role: "Architect",
       name: "David Smith",
       desc: "Passionate about modern designs that blend functionality with aesthetics.",
-      img: "https://images.pexels.com/photos/32947545/pexels-photo-32947545.jpeg",
+      img: teamimage3,
     },
   ];
 

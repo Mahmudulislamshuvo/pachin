@@ -1,4 +1,5 @@
 import { LuMedal } from "react-icons/lu";
+import leftImage from "../../assets/Images/wemakeEasy.png";
 
 const MakeThingEasy = () => {
   return (
@@ -7,8 +8,9 @@ const MakeThingEasy = () => {
         <div className="flex flex-col md:flex-row gap-x-10">
           <div className="w-full md:w-[40%]">
             <img
-              src="https://images.pexels.com/photos/2647098/pexels-photo-2647098.jpeg"
-              alt="image"
+              src={leftImage}
+              alt="WemakeeasyImage"
+              className="h-full w-full object-cover"
             />
           </div>
           <div className="w-full md:w-[58%] ">

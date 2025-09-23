@@ -5,6 +5,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import Logo from "../CommonComponents/Logo";
+import footer from "../../assets/Images/Footer.jpg";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
       className="bg-cover bg-center bg-no-repeat relative"
       style={{
         // todo image link will replace here with imported name
-        backgroundImage: `url(${"https://images.pexels.com/photos/1087735/pexels-photo-1087735.jpeg"})`,
+        backgroundImage: `url(${footer})`,
       }}
     >
       {/* Overlay */}

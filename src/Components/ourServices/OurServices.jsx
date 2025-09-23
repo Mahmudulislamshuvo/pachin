@@ -7,6 +7,7 @@ import {
   FaDraftingCompass,
 } from "react-icons/fa";
 import PageHeader from "../CommonComponents/PageHeader";
+import ServiceLayerImage from "../../assets/Images/ServiceLayerImage.jpg";
 
 const OurServices = () => {
   const servicesData = [
@@ -58,8 +59,8 @@ const OurServices = () => {
     <div className="relative w-full md:h-[130vh] px-5 md:px-0">
       {/* Background image layer */}
       <img
-        src="https://images.pexels.com/photos/31750956/pexels-photo-31750956.jpeg"
-        alt="services"
+        src={ServiceLayerImage}
+        alt="ServiceLayerImage"
         className="absolute inset-0 w-full h-full object-cover"
       />
 

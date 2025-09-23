@@ -1,4 +1,5 @@
-import { IoCall } from "react-icons/io5";
+import image1 from "../../../assets/Images/BestReliableSolution1.jpg";
+import image2 from "../../../assets/Images/BestReliableSolution2.jpg";
 
 const TheBestReliable = () => {
   return (
@@ -19,10 +20,12 @@ const TheBestReliable = () => {
           </div>
           <div className="space-y-5 text-text-Secondary text-lg py-10 ">
             <p>
-              Style Museum is a renown fashion house in Bangladesh with a passion for creating spaces. 
+              Style Museum is a renown fashion house in Bangladesh with a
+              passion for creating spaces.
             </p>
             <p>
-              We offer a comprehensive suite of professional services to a diverse clientele, including homeowners and commercial developers.
+              We offer a comprehensive suite of professional services to a
+              diverse clientele, including homeowners and commercial developers.
             </p>
           </div>
         </div>
@@ -30,14 +33,14 @@ const TheBestReliable = () => {
         <div className="w-[45%]">
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg"
-              alt="fashion design"
+              src={image1}
+              alt="BestReliableSolution1"
               className="h-[500px] w-[400px] object-cover"
             />
 
             <img
-              src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg"
-              alt="fashion design"
+              src={image2}
+              alt="BestReliableSolution2"
               className="h-[500px] w-[400px] object-cover absolute top-20 left-20 p-2 bg-text-White rounded-6px"
             />
           </div>

@@ -6,6 +6,12 @@ import { Pagination } from "swiper/modules";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { IoArrowRedoSharp } from "react-icons/io5";
 import { useState } from "react";
+import image1 from "../../assets/Images/GalleryyMain1.jpg";
+import image2 from "../../assets/Images/GalleryyMain2.jpg";
+import image3 from "../../assets/Images/GalleryyMain3.jpg";
+import image4 from "../../assets/Images/GalleryyMain4.jpg";
+import image5 from "../../assets/Images/GalleryyMain5.jpg";
+import image6 from "../../assets/Images/GalleryyMain6.jpg";
 
 const TopProjects = () => {
   const [activeId, setActiveId] = useState(null);
@@ -19,43 +25,43 @@ const TopProjects = () => {
       id: 1,
       title: "Modern Living Room",
       subtitle: "Chic & Comfortable",
-      imageUrl: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg",
+      imageUrl: image1,
     },
     {
       id: 2,
       title: "Chic Bedroom Design",
       subtitle: "Elegant & Serene",
-      imageUrl: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg",
+      imageUrl: image2,
     },
     {
       id: 3,
       title: "Minimalist Office Space",
       subtitle: "Clean & Productive",
-      imageUrl: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg",
+      imageUrl: image3,
     },
     {
       id: 4,
       title: "Cozy Reading Nook",
       subtitle: "Quiet & Quaint",
-      imageUrl: "https://images.pexels.com/photos/6492403/pexels-photo-6492403.jpeg",
+      imageUrl: image4,
     },
     {
       id: 5,
       title: "Elegant Dining Area",
       subtitle: "Stylish & Sophisticated",
-      imageUrl: "https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg",
+      imageUrl: image5,
     },
     {
       id: 6,
       title: "Stylish Workspace",
       subtitle: "Modern & Functional",
-      imageUrl: "https://images.pexels.com/photos/102129/pexels-photo-102129.jpeg",
+      imageUrl: image6,
     },
     {
       id: 7,
       title: "Contemporary Kitchen",
       subtitle: "Sleek & Smart",
-      imageUrl: "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg",
+      imageUrl: image3,
     },
   ];
 

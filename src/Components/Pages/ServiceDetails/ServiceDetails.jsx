@@ -1,12 +1,11 @@
 import Breadcrumb from "../Common/Breadcrumb";
+import layerImage from "../../../assets/Images/aboutusBredcrumb.jpg";
 
 const ServiceDetails = ({ setPage }) => {
   return (
     <div>
       <Breadcrumb
-        image={
-          "https://images.pexels.com/photos/33660828/pexels-photo-33660828.jpeg"
-        }
+        image={layerImage}
         title={"Service Details"}
         setPage={setPage}
       />
