@@ -6,9 +6,9 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import PageHeader from "../CommonComponents/PageHeader";
-import teamimage1 from "../../assets/Images/team1.jpg";
-import teamimage2 from "../../assets/Images/team3.jpg";
-import teamimage3 from "../../assets/Images/team4.jpg";
+import teamimageOne from "../../assets/Images/team1.jpg";
+import teamimageTwo from "../../assets/Images/team3.jpg";
+import teamimageThree from "../../assets/Images/Team4.jpg";
 
 const MeatOurTeam = () => {
   const teamMembers = [
@@ -17,21 +17,21 @@ const MeatOurTeam = () => {
       role: "Project Manager",
       name: "Fardian Jabinsha",
       desc: "Printer took a galley of type and scrambled it to make a type specimenbook.",
-      img: teamimage1,
+      img: teamimageOne,
     },
     {
       id: 2,
       role: "Senior Engineer",
       name: "Maria Johnson",
       desc: "Experienced in managing large construction projects with innovative solutions.",
-      img: teamimage2,
+      img: teamimageTwo,
     },
     {
       id: 3,
       role: "Architect",
       name: "David Smith",
       desc: "Passionate about modern designs that blend functionality with aesthetics.",
-      img: teamimage3,
+      img: teamimageThree,
     },
   ];
 
