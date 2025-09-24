@@ -15,6 +15,7 @@ import WelcomeToStyleMuseum from "./Components/WelcomeToStyleMuseum/WelcomeToSty
 import WhyWeAreBest from "./Components/WhyWeAreBest/WhyWeAreBest";
 import AboutUS from "./Components/Pages/AboutUs/AboutUS";
 import ServiceDetails from "./Components/Pages/ServiceDetails/ServiceDetails";
+import WhatsAppButton from "./Components/CommonComponents/WhatsAppButton";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -79,7 +80,7 @@ const App = () => {
       <div ref={contactRef} className="scroll-mt-20">
         <ContactUs />
       </div>
-
+      <WhatsAppButton />
       {/* Footer */}
       <Footer />
     </div>

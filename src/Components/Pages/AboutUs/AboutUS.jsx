@@ -14,7 +14,7 @@ const AboutUS = ({ setPage }) => {
       <Breadcrumb image={image} title={"About Us"} setPage={setPage} />
       <TheBestReliable />
       <WeEnsureQuality />
-      <SuccessCount />
+      {/* <SuccessCount /> */}
       <HowWeWork />
       <Testimonial />
       {/* <MeetWithOurLeaders /> */}
