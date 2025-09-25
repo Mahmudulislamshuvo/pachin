@@ -16,7 +16,7 @@ const AboutUS = ({ setPage }) => {
       <WeEnsureQuality />
       {/* <SuccessCount /> */}
       <HowWeWork />
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/* <MeetWithOurLeaders /> */}
       {/* <Footer /> */}
     </div>

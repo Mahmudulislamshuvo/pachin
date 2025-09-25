@@ -48,22 +48,13 @@ const Navbar = ({ scrollToSection, refs }) => {
                 className="cursor-pointer transition-colors relative group flex items-center gap-x-1"
               >
                 Our Services
-                {/* <HiChevronDown className="text-lg" />
-                <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Services 1
-                  </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Services 2
-                  </li>
-                  <li
-                    onClick={() => setPage("service")}
-                    className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White"
-                  >
-                    Service Details
-                  </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White"></li>
-                </ul> */}
+              </li>
+              {/* Services */}
+              <li
+                onClick={() => handleNavClick(refs.portfolio)}
+                className="cursor-pointer transition-colors relative group flex items-center gap-x-1"
+              >
+                Portfolio
               </li>
 
               {/* Blog */}
@@ -94,21 +85,6 @@ const Navbar = ({ scrollToSection, refs }) => {
                 className="cursor-pointer transition-colors relative group flex items-center gap-x-1"
               >
                 Contact Us
-                {/* <HiChevronDown className="text-lg" />
-                <ul className="absolute left-0 top-full mt-2 py-2 w-50 bg-text-White text-text-Primary opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Blog 1
-                  </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Blog 2
-                  </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Blog 3
-                  </li>
-                  <li className="px-6 py-2 hover:bg-background cursor-pointer hover:text-text-White">
-                    Blog 4
-                  </li>
-                </ul> */}
               </li>
             </ul>
             <button className="bg-text-White text-background py-3 px-6 rounded-24px font-medium hover:shadow-card transition">
@@ -152,6 +128,13 @@ const Navbar = ({ scrollToSection, refs }) => {
             />
           </li> */}
 
+          {/* Home */}
+          <li
+            onClick={() => handleNavClick(refs.homeRef)}
+            className="hover:text-text-Secondary transition-colors"
+          >
+            Home
+          </li>
           {/* About */}
           <li
             onClick={() => handleNavClick(refs.aboutRef)}

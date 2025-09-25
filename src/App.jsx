@@ -23,6 +23,7 @@ const App = () => {
   const serviceRef = useRef(null);
   const blogRef = useRef(null);
   const contactRef = useRef(null);
+  const portfolio = useRef(null);
 
   // scroll function
   const scrollToSection = (ref) => {
@@ -39,6 +40,7 @@ const App = () => {
             homeRef,
             aboutRef,
             serviceRef,
+            portfolio,
             blogRef,
             contactRef,
           }}
@@ -48,16 +50,21 @@ const App = () => {
       {/* Home Section */}
       <div ref={homeRef} className="scroll-mt-20">
         <Banner />
-        <WelcomeToStyleMuseum />
-        <MakeThingEasy />
-        <OurServices />
-        <TopProjects />
-        <SuccessGlance />
-        <Discover />
-        <MeatOurTeam />
-        <WhyWeAreBest />
-        <ClientsFeadback />
       </div>
+      <WelcomeToStyleMuseum />
+      <MakeThingEasy />
+      <div ref={serviceRef} className="scroll-mt-20">
+        <OurServices />
+      </div>
+      <div ref={portfolio} className="scroll-mt-20">
+        <TopProjects />
+      </div>
+
+      <SuccessGlance />
+      <Discover />
+      <MeatOurTeam />
+      <WhyWeAreBest />
+      <ClientsFeadback />
 
       {/* About Section */}
       <div ref={aboutRef} className="scroll-mt-25">
@@ -65,11 +72,9 @@ const App = () => {
       </div>
 
       {/* Service Section */}
-      <div ref={serviceRef} className="scroll-mt-20">
+      {/* <div ref={serviceRef} className="scroll-mt-20">
         <ServiceDetails />
-      </div>
-
-      <TopProjects />
+      </div> */}
 
       {/* Blog Section */}
       <div ref={blogRef} className="scroll-mt-20">
