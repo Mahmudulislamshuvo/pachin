@@ -21,12 +21,9 @@ const Banner = () => {
                 <span className="text-background pl-3">Since 2013</span>
               </h1>
               <p className="text-text-White pt-4 px-5 md:pt-8 md:px-40">
-                Style Museum has spent nearly a decade delivering top-quality
-                products by embracing new technologies and innovative practices.
-                With a focus on 3D design and expanding R&D, the brand pairs
-                quality with innovation. Sustainability is also central, as the
-                company continually enhances its eco-friendly efforts to create
-                a positive environmental impact.
+                Style Museum delivers quality with innovation and
+                sustainability, embracing 3D design, research, and eco-friendly
+                practices for lasting impact.
               </p>
               <button className="py-3 px-8 text-text-White bg-background rounded-24px font-medium mt-8">
                 LEARN MORE

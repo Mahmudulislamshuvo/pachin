@@ -16,6 +16,11 @@ import WhyWeAreBest from "./Components/WhyWeAreBest/WhyWeAreBest";
 import AboutUS from "./Components/Pages/AboutUs/AboutUS";
 import WhatsAppButton from "./Components/CommonComponents/WhatsAppButton";
 import WeEnsureQualityMainPage from "./Components/CommonComponents/WeEnsureQualityMainPage";
+import TheBestReliable from "./Components/Pages/AboutUs/TheBestReliable";
+import CompanyOverview from "./Components/CommonComponents/CompanyOverview";
+import Sustainable from "./Components/Sustainable/Sustainable";
+import OurClients from "./Components/OurClients/OurClients";
+import ContributionBluePlanet from "./Components/ContributionBluePlanet/ContributionBluePlanet";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -53,6 +58,8 @@ const App = () => {
       </div>
       <WeEnsureQualityMainPage />
       <WelcomeToStyleMuseum />
+      <CompanyOverview />
+      <Sustainable />
       <MakeThingEasy />
       <div ref={serviceRef} className="scroll-mt-20">
         <OurServices />
@@ -60,6 +67,8 @@ const App = () => {
       <div ref={portfolio} className="scroll-mt-20">
         <TopProjects />
       </div>
+
+      <ContributionBluePlanet />
 
       <SuccessGlance />
       <Discover />
@@ -81,6 +90,7 @@ const App = () => {
       <div ref={blogRef} className="scroll-mt-20">
         <Blog />
       </div>
+      <OurClients />
 
       {/* Contact Section */}
       <div ref={contactRef} className="scroll-mt-20">
