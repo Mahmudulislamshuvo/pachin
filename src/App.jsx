@@ -21,6 +21,7 @@ import CompanyOverview from "./Components/CommonComponents/CompanyOverview";
 import Sustainable from "./Components/Sustainable/Sustainable";
 import OurClients from "./Components/OurClients/OurClients";
 import ContributionBluePlanet from "./Components/ContributionBluePlanet/ContributionBluePlanet";
+import MachineTable from "./Components/CommonComponents/MachineTable";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -69,6 +70,7 @@ const App = () => {
       </div>
 
       <ContributionBluePlanet />
+      <MachineTable />
 
       <SuccessGlance />
       <Discover />

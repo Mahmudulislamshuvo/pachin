@@ -8,7 +8,7 @@ import tillys from "../../assets/svg/tillys-1-logo-svg-vector.svg";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -35,10 +35,15 @@ const OurClients = () => {
 
           {/* ✅ Only ONE Swiper */}
           <Swiper
-            // pagination={{ clickable: true }}
-            modules={[Pagination]}
+            modules={[Autoplay]}
             spaceBetween={30}
-            slidesPerView={4} // adjust based on design
+            slidesPerView={4}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            pagination={{ clickable: true }}
             className="mySwiper"
           >
             {brandLogos.map((item) => (
