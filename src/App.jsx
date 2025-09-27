@@ -14,8 +14,8 @@ import TopProjects from "./Components/TopProjects/TopProjects";
 import WelcomeToStyleMuseum from "./Components/WelcomeToStyleMuseum/WelcomeToStyleMuseum";
 import WhyWeAreBest from "./Components/WhyWeAreBest/WhyWeAreBest";
 import AboutUS from "./Components/Pages/AboutUs/AboutUS";
-import ServiceDetails from "./Components/Pages/ServiceDetails/ServiceDetails";
 import WhatsAppButton from "./Components/CommonComponents/WhatsAppButton";
+import WeEnsureQualityMainPage from "./Components/CommonComponents/WeEnsureQualityMainPage";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -51,6 +51,7 @@ const App = () => {
       <div ref={homeRef} className="scroll-mt-20">
         <Banner />
       </div>
+      <WeEnsureQualityMainPage />
       <WelcomeToStyleMuseum />
       <MakeThingEasy />
       <div ref={serviceRef} className="scroll-mt-20">
