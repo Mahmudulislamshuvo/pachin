@@ -201,9 +201,9 @@ const MachineTable = () => {
               {machineData.map((machine) => (
                 <tr
                   key={machine.si}
-                  className="bg-zinc-900/70 border-b  hover:bg-zinc-700/70 transition-colors duration-200"
+                  className="bg-zinc-900/70 border-b border-zinc-700 hover:bg-zinc-700/70 transition-colors duration-200"
                 >
-                  <td className="px-6 py-4 text-center font-medium text-xl">
+                  <td className="px-6 py-4 text-center font-medium">
                     {machine.si}
                   </td>
                   <td className="px-6 py-4">{machine.type}</td>
