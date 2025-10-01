@@ -7,11 +7,11 @@ import Ross_Stores_logo from "../../assets/svg/Ross_Stores_logo.svg";
 import tillys from "../../assets/svg/tillys-1-logo-svg-vector.svg";
 
 // Example country logos/images
-import usa from "../../assets/svg/usa.svg";
-import uae from "../../assets/svg/united_arab.svg";
-import russia from "../../assets/svg/russia.svg";
-import poland from "../../assets/svg/poland.svg";
-import singapore from "../../assets/svg/singapore.svg";
+import usa from "../../assets/Images/united_states_of_america.png";
+import uae from "../../assets/Images/united_arab_emirates.png";
+import russia from "../../assets/Images/russia.png";
+import poland from "../../assets/Images/poland.png";
+import singapore from "../../assets/Images/singapore.png";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -99,7 +99,8 @@ const OurClients = () => {
           >
             {countryLogos.map((item) => (
               <SwiperSlide key={item.id} style={{ width: "auto" }}>
-                <div className="flex justify-center items-center px-4">
+                <div className="flex flex-col justify-center items-center px-4">
+                  <h5>{item.name}</h5>
                   <img
                     src={item.logo}
                     alt={item.name}
