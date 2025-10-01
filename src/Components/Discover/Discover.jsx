@@ -1,62 +1,74 @@
-import image from "../../assets/Images/discover.jpg";
+import { FaMale, FaFemale, FaChild } from "react-icons/fa";
+import mensClothingImage from "../../assets/Images/menufec_first.png";
+import ladiesClothingImage from "../../assets/Images/menufec_second.png";
+import kidsClothingImage from "../../assets/Images/menufec_third.png";
 
-const Discover = () => {
+const ManufacturingExperience = () => {
   return (
-    <div className="bg-bg-blog">
-      <div className="container">
-        <div className="py-20 md:py-40 relative">
-          <div className="md:flex gap-x-10">
-            <div className="w-full md:w-[40%] p-5 md:p-0">
+    <section className="bg-white font-sans py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        {/* Header Section */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-red-600 tracking-wider uppercase">
+            Manufacturing Experience
+          </h2>
+          <p className="mt-4 text-xl text-gray-600 tracking-wide">
+            WHAT WE PRODUCE FOR WHOM
+          </p>
+        </div>
+
+        {/* Categories Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16 text-center">
+          {/* Men's Category */}
+          <div className="flex flex-col items-center">
+            <FaMale className="text-[200px] text-gray-800" aria-hidden="true" />
+            <h3 className="mt-6 text-3xl font-semibold text-gray-900">Men's</h3>
+            <div className="mt-8">
               <img
-                src={image}
-                alt="Discoverimage"
-                className="w-full h-full object-cover"
+                src={mensClothingImage}
+                alt="A collection of men's apparel"
+                className="rounded-lg"
               />
             </div>
-            <div className="w-full md:w-[58%] pl-5">
-              <div className="pr-10 pb-10">
-                <h3 className="text-3xl md:text-5xl font-bold text-text-Primary pt-5">
-                  Discover <span className="text-background">The Best Way</span>{" "}
-                  of Grow a Factory
-                </h3>
-                <p className="text-text-Secondary text-lg pt-5">
-                  With our modern facilities, certified fabric sourcing, and
-                  experienced workforce, Style Museum Ltd. ensures top-quality
-                  knit & woven garments for both local and global brands.
-                </p>
-              </div>
-              <div>
-                <div>
-                  <h5 className="text-text-Primary text-2xl font-bold">
-                    Our Mission
-                  </h5>
-                  <p className="text-text-Secondary text-lg pt-3">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Rosh has been the industry's standard
-                    dummy text
-                  </p>
-                </div>
-                <div className="pt-5 pb-5">
-                  <h5 className="text-text-Primary text-2xl font-bold">
-                    Our Mission
-                  </h5>
-                  <p className="text-text-Secondary text-lg pt-3">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Rosh has been the industry's standard
-                    dummy text
-                  </p>
-                </div>
+          </div>
 
-                <button className="text-text-White bg-background py-3 px-10 rounded-24px text-xl">
-                  Learn More
-                </button>
-              </div>
+          {/* Ladie's Category */}
+          <div className="flex flex-col items-center">
+            <FaFemale
+              className="text-[200px] text-red-600"
+              aria-hidden="true"
+            />
+            <h3 className="mt-6 text-3xl font-semibold text-gray-900">
+              Ladie's
+            </h3>
+            <div className="mt-8">
+              <img
+                src={ladiesClothingImage}
+                alt="A collection of ladies' apparel"
+                className="rounded-lg"
+              />
+            </div>
+          </div>
+
+          {/* Kid's Category */}
+          <div className="flex flex-col items-center">
+            <FaChild
+              className="text-[200px] text-gray-800"
+              aria-hidden="true"
+            />
+            <h3 className="mt-6 text-3xl font-semibold text-gray-900">Kid's</h3>
+            <div className="mt-8">
+              <img
+                src={kidsClothingImage}
+                alt="A collection of kid's apparel"
+                className="rounded-lg"
+              />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Discover;
+export default ManufacturingExperience;

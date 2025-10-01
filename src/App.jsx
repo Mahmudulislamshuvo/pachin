@@ -24,6 +24,9 @@ import ContributionBluePlanet from "./Components/ContributionBluePlanet/Contribu
 import MachineTable from "./Components/CommonComponents/MachineTable";
 import CapacityLeadPayment from "./Components/CapacityLeadPayment/CapacityLeadPayment";
 import OurKeyAndDepartment from "./Components/OurKeyAndDept/OurKeyAndDepartment";
+import FabricLibrary from "./Components/FebricLibrery/FabricLibrary";
+import OurStrength from "./Components/OurStrength/OurStrength";
+import ValueAddition from "./Components/valuAddition/ValueAddition";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -79,6 +82,10 @@ const App = () => {
 
       <SuccessGlance />
       <Discover />
+      <FabricLibrary />
+      <OurStrength />
+      <ValueAddition />
+
       <MeatOurTeam />
       <WhyWeAreBest />
       <ClientsFeadback />
