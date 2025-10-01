@@ -6,7 +6,7 @@ import Hot_Topic_logo from "../../assets/svg/Hot_Topic_logo.svg";
 import Ross_Stores_logo from "../../assets/svg/Ross_Stores_logo.svg";
 import tillys from "../../assets/svg/tillys-1-logo-svg-vector.svg";
 
-// Example country logos/images
+// Country logos (PNG safer for Vercel)
 import usa from "../../assets/Images/united_states_of_america.png";
 import uae from "../../assets/Images/united_arab_emirates.png";
 import russia from "../../assets/Images/russia.png";
@@ -16,8 +16,6 @@ import singapore from "../../assets/Images/singapore.png";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-
-// Import Swiper styles
 import "swiper/css";
 
 const OurClients = () => {
@@ -60,7 +58,7 @@ const OurClients = () => {
               reverseDirection: true,
             }}
             freeMode={false}
-            allowTouchMove={true}
+            allowTouchMove={false}
           >
             {brandLogos.map((item) => (
               <SwiperSlide key={item.id} style={{ width: "auto" }}>
@@ -89,18 +87,18 @@ const OurClients = () => {
             spaceBetween={150}
             slidesPerView={"auto"}
             loop={true}
-            speed={3000}
+            speed={4000}
             autoplay={{
               delay: 0,
               disableOnInteraction: false,
             }}
-            freeMode={true}
-            allowTouchMove={true}
+            freeMode={false}
+            allowTouchMove={false}
           >
             {countryLogos.map((item) => (
               <SwiperSlide key={item.id} style={{ width: "auto" }}>
                 <div className="flex flex-col justify-center items-center px-4">
-                  <h5>{item.name}</h5>
+                  <h5 className="font-semibold mb-2">{item.name}</h5>
                   <img
                     src={item.logo}
                     alt={item.name}
