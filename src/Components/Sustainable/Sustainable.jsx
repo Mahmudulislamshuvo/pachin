@@ -4,7 +4,7 @@ import image2 from "../../assets/Images/sustainableHeadingIcon2.png";
 const Sustainable = () => {
   return (
     <div className="container">
-      <div>
+      <div className="py-20">
         {/* Heading */}
         <div className="flex items-center gap-x-5">
           <div>

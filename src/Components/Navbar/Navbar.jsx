@@ -87,9 +87,14 @@ const Navbar = ({ scrollToSection, refs }) => {
                 Contact Us
               </li>
             </ul>
-            <button className="bg-text-White text-background py-3 px-6 rounded-24px font-medium hover:shadow-card transition">
+            <a
+              href="https://wa.me/+8801672226810"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-text-White text-background py-3 px-6 rounded-24px font-medium hover:shadow-card transition"
+            >
               GET A QUOTE
-            </button>
+            </a>
           </div>
 
           {/* Mobile Hamburger */}

@@ -7,13 +7,6 @@ const WelcomeToStyleMuseum = () => {
   return (
     <div className="container">
       <div className="py-15 md:py-20">
-        <div>
-          <PageHeader
-            title="Style Museum: Renown Fashion House in Bangladesh"
-            desc="Style Museum Ltd. is a full‐service knit & woven garments manufacturing unit based in Dhaka, Bangladesh. Since commencing operations in 2013, we’ve grown from a small production unit into a modern facility, serving both local and international clients with high‐quality, reliable apparel solutions."
-          />
-        </div>
-
         <div className="mt-8">
           <div className="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
             <div className="relative flex flex-col md:flex-row items-center">

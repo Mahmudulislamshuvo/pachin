@@ -21,9 +21,12 @@ const Banner = () => {
                 <span className="text-background pl-3">Since 2013</span>
               </h1>
               <p className="text-text-White pt-4 px-5 md:pt-8 md:px-40">
-                Style Museum delivers quality with innovation and
-                sustainability, embracing 3D design, research, and eco-friendly
-                practices for lasting impact.
+                For nearly a decade, Style Museum has delivered the highest
+                quality products by embracing innovation and new technology. Our
+                pursuit of perfection is supported by expanding our R&D efforts
+                and introducing 3D design. Alongside this, sustainability
+                remains a core pillar, as we constantly work to improve our
+                positive impact on the environment.
               </p>
               <a
                 href="https://wa.me/+8801672226810"

@@ -22,6 +22,8 @@ import Sustainable from "./Components/Sustainable/Sustainable";
 import OurClients from "./Components/OurClients/OurClients";
 import ContributionBluePlanet from "./Components/ContributionBluePlanet/ContributionBluePlanet";
 import MachineTable from "./Components/CommonComponents/MachineTable";
+import CapacityLeadPayment from "./Components/CapacityLeadPayment/CapacityLeadPayment";
+import OurKeyAndDepartment from "./Components/OurKeyAndDept/OurKeyAndDepartment";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -60,7 +62,11 @@ const App = () => {
       <WeEnsureQualityMainPage />
       <WelcomeToStyleMuseum />
       <CompanyOverview />
+
+      <ContributionBluePlanet />
       <Sustainable />
+      <CapacityLeadPayment />
+      <OurKeyAndDepartment />
       <MakeThingEasy />
       <div ref={serviceRef} className="scroll-mt-20">
         <OurServices />
@@ -69,7 +75,6 @@ const App = () => {
         <TopProjects />
       </div>
 
-      <ContributionBluePlanet />
       <MachineTable />
 
       <SuccessGlance />

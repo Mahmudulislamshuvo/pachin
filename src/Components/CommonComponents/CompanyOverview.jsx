@@ -3,6 +3,13 @@ import image1 from "../../assets/Images/companyOverview.png";
 const CompanyOverview = () => {
   return (
     <div className="container">
+      {/* Heading */}=
+      <div className="space-y-3">
+        <div className="text-text-Primary font-bold text-5xl flex items-center justify-center gap-x-5">
+          <h4>COMPANY</h4>
+          <h4 className="text-background">OVERVIEW</h4>
+        </div>
+      </div>
       <div className="py-20 flex flex-col lg:flex-row items-center gap-10 px-5 md:px-0">
         {/* left */}
         <div className="w-full lg:w-1/2">
@@ -38,7 +45,6 @@ const CompanyOverview = () => {
             </p>
           </div>
         </div>
-
         {/* right */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <div className="relative">
