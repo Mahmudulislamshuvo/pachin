@@ -1,6 +1,6 @@
-import image from "../../assets/Images/sustainablityPillers.png";
+import image from "../../assets/Images/strength.png";
 
-const SustainabilityPillers = () => {
+const StreangthWeakness = () => {
   return (
     <div className="bg-[#231F20]">
       <div className="container py-10">
@@ -24,4 +24,4 @@ const SustainabilityPillers = () => {
   );
 };
 
-export default SustainabilityPillers;
+export default StreangthWeakness;

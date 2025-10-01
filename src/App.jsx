@@ -16,7 +16,7 @@ import WhyWeAreBest from "./Components/WhyWeAreBest/WhyWeAreBest";
 import AboutUS from "./Components/Pages/AboutUs/AboutUS";
 import WhatsAppButton from "./Components/CommonComponents/WhatsAppButton";
 import WeEnsureQualityMainPage from "./Components/CommonComponents/WeEnsureQualityMainPage";
-import TheBestReliable from "./Components/Pages/AboutUs/TheBestReliable";
+import TheBestReliable from "./Components/Pages/AboutUs/SafeWorkEnvironment";
 import CompanyOverview from "./Components/CommonComponents/CompanyOverview";
 import Sustainable from "./Components/Sustainable/Sustainable";
 import OurClients from "./Components/OurClients/OurClients";
@@ -30,6 +30,11 @@ import ValueAddition from "./Components/valuAddition/ValueAddition";
 import WashingPieceDyed from "./Components/WashingPeacDyed/WashingPeceDyed";
 import SustainAccesories from "./Components/SustainAccesories/SustainAccesories";
 import Certifications from "./Components/Certifications/Certifications";
+import SustainabilityPillers from "./Components/SustaiabilityPilers/SustainabilityPillers";
+import SustainabilityRoadmap from "./Components/SustaiablityRoadmap/SustainabilityRoadmap";
+import StreangthWeakness from "./Components/StrengthWeaknesss/StreangthWeakness";
+import TransparencySection from "./Components/Tranceparancy/TranceparancySection";
+import ContactSection from "./Components/ContactSection/ContactSection";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -93,7 +98,12 @@ const App = () => {
       <MeatOurTeam />
       <Certifications />
       <WhyWeAreBest />
+      <SustainabilityPillers />
       <ClientsFeadback />
+      <SustainabilityRoadmap />
+      <StreangthWeakness />
+      <TransparencySection />
+      <ContactSection />
 
       {/* About Section */}
       <div ref={aboutRef} className="scroll-mt-25">

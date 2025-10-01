@@ -16,7 +16,7 @@ const Certifications = () => {
           </div>
           {/* Vontents */}
           <div>
-            <img src={image} alt="Certifications" />
+            <img src={image} alt="Certifications" className="w-full" />
           </div>
         </div>
       </div>

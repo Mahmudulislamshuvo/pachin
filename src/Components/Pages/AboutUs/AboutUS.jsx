@@ -4,15 +4,16 @@ import HowWeWork from "./HowWeWork";
 import MeetWithOurLeaders from "./MeetWithOurLeaders";
 import SuccessCount from "./SuccessCount";
 import Testimonial from "./Testimonial";
-import TheBestReliable from "./TheBestReliable";
+import TheBestReliable from "./SafeWorkEnvironment";
 import WeEnsureQuality from "./WeEnsureQuality";
 import image from "../../../assets/Images/aboutusBredcrumb.jpg";
+import SafeWorkEnvironment from "./SafeWorkEnvironment";
 
 const AboutUS = ({ setPage }) => {
   return (
     <div>
       <Breadcrumb image={image} title={"About Us"} setPage={setPage} />
-      <TheBestReliable />
+      <SafeWorkEnvironment />
       <WeEnsureQuality />
       {/* <SuccessCount /> */}
       <HowWeWork />
