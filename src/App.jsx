@@ -27,6 +27,9 @@ import OurKeyAndDepartment from "./Components/OurKeyAndDept/OurKeyAndDepartment"
 import FabricLibrary from "./Components/FebricLibrery/FabricLibrary";
 import OurStrength from "./Components/OurStrength/OurStrength";
 import ValueAddition from "./Components/valuAddition/ValueAddition";
+import WashingPieceDyed from "./Components/WashingPeacDyed/WashingPeceDyed";
+import SustainAccesories from "./Components/SustainAccesories/SustainAccesories";
+import Certifications from "./Components/Certifications/Certifications";
 
 const App = () => {
   const homeRef = useRef(null);
@@ -85,8 +88,10 @@ const App = () => {
       <FabricLibrary />
       <OurStrength />
       <ValueAddition />
-
+      <WashingPieceDyed />
+      <SustainAccesories />
       <MeatOurTeam />
+      <Certifications />
       <WhyWeAreBest />
       <ClientsFeadback />
 
