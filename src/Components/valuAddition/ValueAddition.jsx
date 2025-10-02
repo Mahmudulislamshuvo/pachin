@@ -72,11 +72,11 @@ const valueAdditionData = [
 // Renders a single column with its title and list of items.
 // The background color is determined by the `isRed` prop.
 const ValueColumn = ({ title, items, isRed }) => {
-  const bgColor = isRed ? "bg-red-600" : "bg-gray-800";
+  const bgColor = isRed ? "bg-custom-red" : "bg-custom-dark-slate";
   const headerHeight = isRed ? "h-40" : "h-24"; // Adjust height for visual balance
 
   return (
-    <div className="flex flex-col text-white">
+    <div className="flex flex-col text-text-White">
       {/* Header section of the column */}
       <div
         className={`flex items-center justify-center p-6 ${bgColor} ${headerHeight}`}
@@ -88,7 +88,7 @@ const ValueColumn = ({ title, items, isRed }) => {
       <ul className="mt-6 space-y-2 px-2">
         {items.map((item, index) => (
           <li key={index} className="flex">
-            <span className="mr-2 text-red-500">-</span>
+            <span className="mr-2 text-custom-red">-</span>
             <span>{item}</span>
           </li>
         ))}
@@ -101,15 +101,15 @@ const ValueColumn = ({ title, items, isRed }) => {
 // This is the main component that you will import into your app.
 const ValueAddition = () => {
   return (
-    <section className="bg-black text-white font-sans py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-text-black text-text-White font-sans py-20 px-4 sm:px-6 lg:px-8">
       <div className="container">
         <div className="max-w-7xl mx-auto">
           {/* Main Title */}
           <header className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide">
-              <span className="text-red-500">VALUE ADDITION</span> ON GARMENT
+              <span className="text-custom-red">VALUE ADDITION</span> ON GARMENT
             </h1>
-            <p className="mt-4 text-lg text-gray-400 tracking-wider">
+            <p className="mt-4 text-lg text-text-SecondaryTwo tracking-wider">
               ATTRACT YOUR ENDCUSTOMER
             </p>
           </header>

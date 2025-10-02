@@ -8,12 +8,12 @@ import logo from "../../../assets/logo-2.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-text-Primary text-text-White pt-30 px-4">
+    <footer className="bg-custom-footer-page-bg text-text-White pt-30 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Column 1: Style Museum */}
         <div>
           <img src={logo} alt="Footer2logo" className="mb-4" />
-          <p className="text-sm text-text-White/80 mb-6">
+          <p className="text-sm text-custom-footer-page-text mb-6">
             Printer took a galley of type and scrambled it to make a type
             specimen book.
           </p>
@@ -36,7 +36,7 @@ const Footer = () => {
         {/* Column 2: Our Services */}
         <div>
           <h4 className="text-xl font-bold mb-4">Our Services</h4>
-          <ul className="space-y-2 text-text-White/80">
+          <ul className="space-y-2 text-custom-footer-page-text">
             <li className="transition-colors duration-300 hover:text-background">
               Oil & Gas Engineering
             </li>
@@ -61,7 +61,7 @@ const Footer = () => {
         {/* Column 3: Company */}
         <div>
           <h4 className="text-xl font-bold mb-4">Company</h4>
-          <ul className="space-y-2 text-text-White/80">
+          <ul className="space-y-2 text-custom-footer-page-text">
             <li className="transition-colors duration-300 hover:text-background">
               Home
             </li>
@@ -86,7 +86,7 @@ const Footer = () => {
         {/* Column 4: Subscribe Us */}
         <div>
           <h4 className="text-xl font-bold mb-4">Subscribe Us</h4>
-          <p className="text-sm text-text-White/80 mb-4">
+          <p className="text-sm text-custom-footer-page-text mb-4">
             Printer took a galley of type and scrambled it to make a type
             specimen book.
           </p>
@@ -94,7 +94,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Email Address"
-              className="flex-1 p-3 bg-text-White/10 rounded-md placeholder-text-Secondary text-text-White"
+              className="flex-1 p-3 bg-custom-footer-page-input-bg rounded-md placeholder-text-Secondary text-text-White"
             />
           </div>
           <button className="w-full mt-4 p-3 bg-background rounded-6px font-bold text-text-White uppercase">
@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto border-t border-text-Secondary mt-12 flex flex-col md:flex-row items-center justify-between text-sm text-text-White/80">
+      <div className="max-w-7xl mx-auto border-t border-text-Secondary mt-12 flex flex-col md:flex-row items-center justify-between text-sm text-custom-footer-page-text">
         <p>Copyright © 2019 | All Right Reserved</p>
         <ul className="flex space-x-4 py-8">
           <li className="cursor-pointer transition-colors duration-300 hover:text-background">

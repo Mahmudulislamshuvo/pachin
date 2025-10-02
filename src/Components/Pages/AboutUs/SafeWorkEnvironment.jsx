@@ -21,7 +21,7 @@ const contentData = [
 
 const SafeWorkEnvironment = () => {
   return (
-    <div className="bg-gray-800 font-sans">
+    <div className="bg-custom-dark-slate font-sans">
       <div className="container py-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
           {/* Left Side: Image */}
@@ -34,12 +34,12 @@ const SafeWorkEnvironment = () => {
           </div>
 
           {/* Right Side: Text Content */}
-          <div className="flex flex-col justify-center p-8 md:p-16 text-white">
+          <div className="flex flex-col justify-center p-8 md:p-16 text-text-White">
             <div className="max-w-md mx-auto lg:mx-0">
               {/* Main Title */}
               <h2 className="text-4xl sm:text-5xl font-extrabold uppercase tracking-wide mb-12">
                 SAFE WORK <br />
-                <span className="text-red-500">ENVIRONMENT</span>
+                <span className="text-custom-red">ENVIRONMENT</span>
               </h2>
 
               {/* Content Sections */}
@@ -49,7 +49,7 @@ const SafeWorkEnvironment = () => {
                     <h3 className="text-2xl font-bold uppercase mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-300 text-lg leading-relaxed">
+                    <p className="text-text-SecondaryTwo text-lg leading-relaxed">
                       {item.description}
                     </p>
                   </div>

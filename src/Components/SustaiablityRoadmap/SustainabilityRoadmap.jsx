@@ -2,7 +2,7 @@ import image from "../../assets/Images/SustainabilityRoadmap.png";
 
 const SustainabilityRoadmap = () => {
   return (
-    <div className="bg-[#231F20]">
+    <div className="bg-custom-sustainable-roadmap-bg">
       <div className="container py-20">
         {/* The relative container is essential for positioning the text over the image. */}
         <div className="relative">
@@ -16,12 +16,11 @@ const SustainabilityRoadmap = () => {
           <div className="absolute top-8 md:top-16 left-1/2 -translate-x-1/2 w-full px-4">
             <div className="text-center">
               <h2
-                className="text-4xl sm:text-5xl font-extrabold text-white tracking-wider uppercase"
-                style={{ textShadow: "2px 2px 8px rgba(0, 0, 0, 0.7)" }}
+                className="text-4xl sm:text-5xl font-extrabold text-text-White tracking-wider uppercase shadow-custom-sustainable-roadmap-shadow"
               >
                 Sustainability Roadmap
               </h2>
-              <p className="mt-4 text-xl text-gray-200 tracking-wide">
+              <p className="mt-4 text-xl text-text-SecondaryTwo tracking-wide">
                 CHARTING A COURSE FOR A GREENER TOMORROW
               </p>
             </div>

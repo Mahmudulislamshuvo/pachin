@@ -3,7 +3,7 @@ import { FaChartBar, FaTags, FaMoneyBillWave } from "react-icons/fa";
 const CapacityLeadPayment = () => {
   return (
     // 1. Main background color updated
-    <div className="bg-custom-gray">
+    <div className="bg-custom-footer-border">
       <div className="container text-text-White p-8 md:p-12 font-sans">
         <div className="max-w-7xl mx-auto">
           {/* Title Section */}
@@ -11,7 +11,7 @@ const CapacityLeadPayment = () => {
             <h1 className="text-4xl md:text-5xl font-extrabold uppercase mb-2">
               CAPACITY - LEAD TIME - PAYMENT TERMS
             </h1>
-            <p className="text-xl md:text-2xl font-light text-text-SecondaryTwo">
+            <p className="text-xl md:text-2xl font-light text-text-Secondary">
               FREQUENTLY ASKED QUESTIONS
             </p>
           </div>
@@ -21,15 +21,15 @@ const CapacityLeadPayment = () => {
             {/* Base classes for all cards */}
             {/* 2. Added hover effects and smooth transition */}
             <div
-              className="bg-custom-slate rounded-lg p-6 shadow-lg flex flex-col items-center text-center 
+              className="bg-slate-800 rounded-lg p-6 shadow-lg flex flex-col items-center text-center 
                        transition-all duration-300 ease-in-out cursor-pointer
                        hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-500/20"
             >
-              <div className="bg-custom-red p-4 rounded-full mb-4">
+              <div className="bg-background p-4 rounded-full mb-4">
                 <FaChartBar className="text-text-White text-3xl" />
               </div>
               <h3 className="text-2xl font-bold mb-4 uppercase">Capacity</h3>
-              <div className="text-left w-full space-y-4 text-text-SecondaryTwo">
+              <div className="text-left w-full space-y-4 text-text-Secondary">
                 <div>
                   <h4 className="font-semibold text-lg mb-1 text-text-White">
                     BULK PRODUCTION
@@ -56,15 +56,15 @@ const CapacityLeadPayment = () => {
             </div>
 
             <div
-              className="bg-custom-slate rounded-lg p-6 shadow-lg flex flex-col items-center text-center 
+              className="bg-slate-800 rounded-lg p-6 shadow-lg flex flex-col items-center text-center 
                        transition-all duration-300 ease-in-out cursor-pointer
                        hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-500/20"
             >
-              <div className="bg-custom-red p-4 rounded-full mb-4">
+              <div className="bg-background p-4 rounded-full mb-4">
                 <FaTags className="text-text-White text-3xl" />
               </div>
               <h3 className="text-2xl font-bold mb-4 uppercase">Lead Time</h3>
-              <div className="text-left w-full space-y-4 text-text-SecondaryTwo">
+              <div className="text-left w-full space-y-4 text-text-Secondary">
                 <div>
                   <h4 className="font-semibold text-lg mb-1 text-text-White">
                     Sample
@@ -73,7 +73,7 @@ const CapacityLeadPayment = () => {
                   <p>Sales sample : 7 to 7 weeks</p>
                   <p>PP sample : 5 to 10 working days</p>
                   <p>Size-set Sample : 10 working days</p>
-                  <p className="italic text-gray-400">
+                  <p className="italic text-text-SecondaryTwo">
                     [after bulk fabric received]
                   </p>
                 </div>
@@ -82,7 +82,7 @@ const CapacityLeadPayment = () => {
                     Bulk order
                   </h4>
                   <p>Minimum 30 days - Maximum 120 days</p>
-                  <p className="italic text-gray-400">
+                  <p className="italic text-text-SecondaryTwo">
                     [Maximum depends on order size and number of styles]
                   </p>
                 </div>
@@ -90,17 +90,17 @@ const CapacityLeadPayment = () => {
             </div>
 
             <div
-              className="bg-custom-slate rounded-lg p-6 shadow-lg flex flex-col items-center text-center 
+              className="bg-slate-800 rounded-lg p-6 shadow-lg flex flex-col items-center text-center 
                        transition-all duration-300 ease-in-out cursor-pointer
                        hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:shadow-red-500/20"
             >
-              <div className="bg-custom-red p-4 rounded-full mb-4">
+              <div className="bg-background p-4 rounded-full mb-4">
                 <FaMoneyBillWave className="text-text-White text-3xl" />
               </div>
               <h3 className="text-2xl font-bold mb-4 uppercase">
                 Payment Terms
               </h3>
-              <div className="text-left w-full space-y-4 text-text-SecondaryTwo">
+              <div className="text-left w-full space-y-4 text-text-Secondary">
                 <div>
                   <h4 className="font-semibold text-lg mb-1 text-text-White">
                     Telegraphic Transfer (T/T):

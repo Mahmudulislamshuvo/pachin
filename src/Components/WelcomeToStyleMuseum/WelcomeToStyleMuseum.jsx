@@ -30,7 +30,7 @@ const WelcomeToStyleMuseum = () => {
               {/* Card 2 (middle one) */}
               <div
                 className="w-11/12 max-w-sm sm:w-3/5 relative 
-                bg-text-Primary md:bg-white md:z-10 
+                bg-text-Primary md:bg-text-White md:z-10 
                 lg:scale-110 shadow-card"
               >
                 <div className="bg-background md:bg-background overflow-hidden py-5 md:py-20">

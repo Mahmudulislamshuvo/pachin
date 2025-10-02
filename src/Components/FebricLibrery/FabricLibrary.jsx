@@ -6,7 +6,7 @@ const fabricData = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12 text-red-500"
+        className="h-12 w-12 text-custom-red"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -34,15 +34,15 @@ const fabricData = [
       "Jacquard",
       "Polar fleece",
     ],
-    bgColor: "bg-gray-800",
-    textColor: "text-white",
+    bgColor: "bg-custom-dark-slate",
+    textColor: "text-text-White",
   },
   {
     title: "SUSTAINABLE",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12 text-black"
+        className="h-12 w-12 text-text-black"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -63,15 +63,15 @@ const fabricData = [
       "ECOVERA certified",
       "Woolmark certified",
     ],
-    bgColor: "bg-white",
-    textColor: "text-black",
+    bgColor: "bg-text-White",
+    textColor: "text-text-black",
   },
   {
     title: "PIQUE",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12 text-white"
+        className="h-12 w-12 text-text-White"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -91,15 +91,15 @@ const fabricData = [
       "Drop needle",
       "Jacquard",
     ],
-    bgColor: "bg-red-600",
-    textColor: "text-white",
+    bgColor: "bg-custom-red",
+    textColor: "text-text-White",
   },
   {
     title: "12 GG",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12 text-black"
+        className="h-12 w-12 text-text-black"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -113,15 +113,15 @@ const fabricData = [
       </svg>
     ),
     items: ["Plain Jersey", "Pattern Jersey", "Cuff&Sew", "Sweater"],
-    bgColor: "bg-white",
-    textColor: "text-black",
+    bgColor: "bg-text-White",
+    textColor: "text-text-black",
   },
   {
     title: "INTERLOCK",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12 text-black"
+        className="h-12 w-12 text-text-black"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -139,15 +139,15 @@ const fabricData = [
       "Drop needle interlock",
       "Jacquard",
     ],
-    bgColor: "bg-white",
-    textColor: "text-black",
+    bgColor: "bg-text-White",
+    textColor: "text-text-black",
   },
   {
     title: "TERRY",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12 text-white"
+        className="h-12 w-12 text-text-White"
         viewBox="0 0 20 20"
         fill="currentColor"
       >
@@ -161,15 +161,15 @@ const fabricData = [
       "Both side brush fleece",
       "Jacquard",
     ],
-    bgColor: "bg-red-600",
-    textColor: "text-white",
+    bgColor: "bg-custom-red",
+    textColor: "text-text-White",
   },
   {
     title: "RIB",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12 text-black"
+        className="h-12 w-12 text-text-black"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -195,15 +195,15 @@ const fabricData = [
       "Auto stripe",
       "Jacquard",
     ],
-    bgColor: "bg-white",
-    textColor: "text-black",
+    bgColor: "bg-text-White",
+    textColor: "text-text-black",
   },
   {
     title: "JERSEY",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12 text-white"
+        className="h-12 w-12 text-text-White"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -232,15 +232,15 @@ const fabricData = [
       "Auto stripe",
       "Jacquard",
     ],
-    bgColor: "bg-red-600",
-    textColor: "text-white",
+    bgColor: "bg-custom-red",
+    textColor: "text-text-White",
   },
   {
     title: "VALUE ADDITION",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-12 w-12 text-black"
+        className="h-12 w-12 text-text-black"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -272,8 +272,8 @@ const fabricData = [
       "Digital AOP",
       "Allover embroidery",
     ],
-    bgColor: "bg-white",
-    textColor: "text-black",
+    bgColor: "bg-text-White",
+    textColor: "text-text-black",
   },
 ];
 
@@ -299,14 +299,14 @@ const FabricCard = ({ title, icon, items, bgColor, textColor }) => {
 // --- Main Fabric Library Component ---
 const FabricLibrary = () => {
   return (
-    <div className="bg-black text-white min-h-screen p-8 font-sans">
+    <div className="bg-text-black text-text-White min-h-screen p-8 font-sans">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <header className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide">
-            INNOVATION OF <span className="text-red-500">FABRICS</span>
+            INNOVATION OF <span className="text-custom-red">FABRICS</span>
           </h1>
-          <p className="mt-4 text-lg text-gray-400">
+          <p className="mt-4 text-lg text-text-SecondaryTwo">
             MORE THAN 500+ TYPES OF FABRICS IN OUR LIBRARY
           </p>
         </header>

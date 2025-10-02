@@ -71,7 +71,7 @@ const Testimonial = () => {
         >
           {testimonials.map((t) => (
             <SwiperSlide key={t.id}>
-              <div className="bg-white rounded-8px p-8 shadow-box-shadow h-full">
+              <div className="bg-text-White rounded-8px p-8 shadow-box-shadow h-full">
                 {/* Profile Section */}
                 <div className="flex items-center gap-4 mb-4">
                   <img

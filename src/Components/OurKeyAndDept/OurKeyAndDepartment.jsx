@@ -14,7 +14,7 @@ const OurKeyAndDepartment = () => {
   ];
 
   return (
-    <div className="bg-white text-gray-800 p-8 md:p-12 font-sans min-h-screen flex items-center justify-center">
+    <div className="bg-text-White text-text-Primary p-8 md:p-12 font-sans min-h-screen flex items-center justify-center">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Side: Images */}
 
@@ -39,7 +39,7 @@ const OurKeyAndDepartment = () => {
         {/* Added a vertical border for large screens */}
         <div className="lg:pl-12 lg:border-l-5 lg:border-background">
           {/* Removed red color from the title */}
-          <h2 className="text-4xl md:text-5xl font-extrabold uppercase mb-4 leading-tight text-black">
+          <h2 className="text-4xl md:text-5xl font-extrabold uppercase mb-4 leading-tight text-text-black">
             OUR KEY <br />
             <span className="text-background">DEPARTMENTS</span>
           </h2>
@@ -48,8 +48,8 @@ const OurKeyAndDepartment = () => {
             {departments.map((dept, index) => (
               <li key={index} className="text-xl md:text-3xl font-semibold">
                 {/* Simplified numbering */}
-                <span className="text-black font-bold mr-2">{index + 1}.</span>
-                {dept} <span className="text-gray-500">DEPARTMENT</span>
+                <span className="text-text-black font-bold mr-2">{index + 1}.</span>
+                {dept} <span className="text-text-Secondary">DEPARTMENT</span>
               </li>
             ))}
           </ul>

@@ -21,8 +21,8 @@ const transparencyData = [
     ),
     description:
       "We are committed to publish our sustainability report every year.",
-    bgColor: "bg-red-600",
-    textColor: "text-white",
+    bgColor: "bg-custom-red",
+    textColor: "text-text-White",
     corners: "rounded-tl-3xl rounded-br-3xl",
   },
   {
@@ -47,8 +47,8 @@ const transparencyData = [
     ),
     description:
       "With proper arrangement we are open to everybody to visit our facilities and we are delighted to share our knowledge and experience.",
-    bgColor: "bg-white",
-    textColor: "text-red-600",
+    bgColor: "bg-text-White",
+    textColor: "text-custom-red",
     corners: "rounded-tr-3xl rounded-bl-3xl",
   },
   {
@@ -73,8 +73,8 @@ const transparencyData = [
     ),
     description:
       "We are wholehearted to comply national or international code of conduct.",
-    bgColor: "bg-white",
-    textColor: "text-red-600",
+    bgColor: "bg-text-White",
+    textColor: "text-custom-red",
     corners: "rounded-bl-3xl rounded-tr-3xl",
   },
   {
@@ -99,22 +99,22 @@ const transparencyData = [
     ),
     description:
       "We are ready to collaborate with any international and national agencies for sectoral and individual improvement.",
-    bgColor: "bg-red-600",
-    textColor: "text-white",
+    bgColor: "bg-custom-red",
+    textColor: "text-text-White",
     corners: "rounded-br-3xl rounded-tl-3xl",
   },
 ];
 
 const TransparencySection = () => {
   return (
-    <div className="bg-gray-800 text-white font-sans py-20 px-4">
+    <div className="bg-custom-transparency-bg text-text-White font-sans py-20 px-4">
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-extrabold uppercase tracking-wide">
-            TRANSPARENCY IN <span className="text-red-500">OPERATION</span>
+            TRANSPARENCY IN <span className="text-custom-red">OPERATION</span>
           </h2>
-          <p className="mt-2 text-lg text-gray-400 tracking-widest">
+          <p className="mt-2 text-lg text-text-SecondaryTwo tracking-widest">
             WE WANT TO SET BENCHMARK AND MILESTONES
           </p>
         </div>
@@ -123,10 +123,10 @@ const TransparencySection = () => {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
           {/* Left Descriptions */}
           <div className="w-full lg:w-1/4 space-y-32 text-center lg:text-right">
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-text-SecondaryTwo text-lg leading-relaxed">
               {transparencyData[0].description}
             </p>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-text-SecondaryTwo text-lg leading-relaxed">
               {transparencyData[2].description}
             </p>
           </div>
@@ -147,10 +147,10 @@ const TransparencySection = () => {
 
           {/* Right Descriptions */}
           <div className="w-full lg:w-1/4 space-y-32 text-center lg:text-left">
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-text-SecondaryTwo text-lg leading-relaxed">
               {transparencyData[1].description}
             </p>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-text-SecondaryTwo text-lg leading-relaxed">
               {transparencyData[3].description}
             </p>
           </div>

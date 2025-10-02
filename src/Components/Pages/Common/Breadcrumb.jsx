@@ -10,7 +10,7 @@ const Breadcrumb = ({ image, title }) => {
         />
 
         {/* Overlay Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-full bg-bannerLayer bg-opacity-40 py-40 px-5">
+        <div className="relative z-10 flex flex-col items-center justify-center h-full bg-custom-breadcrumb-bg py-40 px-5">
           <h1 className="text-7xl font-bold mb-4 text-text-White">{title}</h1>
           <div className="space-x-5 text-lg">
             {/* <button

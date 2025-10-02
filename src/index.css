@@ -22,60 +22,52 @@
   --color-zink900: #18181b;
 
   /* Custom colors */
-  --color-custom-gray: #676e7c; /* CapacityLeadPayment component */
-  --color-custom-slate: #1e293b; /* CapacityLeadPayment component */
-  --color-custom-red: #dc2626; /* CapacityLeadPayment component */
-  --color-custom-dark-gray: #231F20; /* Certifications component */
-  --color-custom-light-gray: #f9fafb; /* ClientsFeadback component */
-  --color-custom-border-gray: #e5e7eb; /* ClientsFeadback component */
-  --color-custom-green: #22c55e; /* WhatsAppButton component */
-  --color-custom-dark-slate: #1f2937; /* ContactSection component */
-  --color-custom-light-slate: #374151; /* ContactSection component */
-  --color-custom-link-red: #ef4444; /* ContactSection component */
-  --color-custom-bg-gray: #f9fafb; /* ContactUs component */
-  --color-custom-input-bg: #f7f7f8; /* ContactUs component */
-  --color-custom-dark-blue: #041436; /* ContributionBluePlanet component */
-  --color-custom-light-blue: #f4f7fb; /* Discover component */
-  --color-custom-dark-red: #b91c1c; /* Discover component */
-  --color-custom-black: #000000; /* FabricLibrary component */
-  --color-custom-footer-bg: #041436; /* Footer component */
-  --color-custom-footer-border: #676e7c; /* Footer component */
-  --color-custom-hover-red: #ff5e14; /* Footer component */
-  --color-custom-team-overlay: #041436; /* MeatOurTeam component */
-  --color-custom-team-border: #ffffff; /* MeatOurTeam component */
-  --color-custom-nav-bg: linear-gradient(65deg,theme(colors.text.White)_35%,theme(colors.background)_30%); /* Navbar component */
-  --color-custom-nav-mobile-bg: linear-gradient(65deg,theme(colors.text.White)_65%,theme(colors.background)_30%); /* Navbar component */
-  --color-custom-nav-md-bg: linear-gradient(65deg,theme(colors.text.White)_70%,theme(colors.background)_30%); /* Navbar component */
-  --color-custom-client-bg: #ffffff; /* OurClients component */
-  --color-custom-client-border: #e5e7eb; /* OurClients component */
-  --color-custom-dept-border: #ff5e14; /* OurKeyAndDepartment component */
-  --color-custom-strength-bg: #231F20; /* OurStrength component */
-  --color-custom-service-layer: rgba(65, 65, 65, 0.5); /* OurServices component */
-  --color-custom-how-work-border: #ff5e14; /* HowWeWork component */
-  --color-custom-leader-bg: #ffffff; /* MeetWithOurLeaders component */
-  --color-custom-leader-border: rgba(0, 0, 0, 0.1); /* MeetWithOurLeaders component */
-  --color-custom-leader-hover-bg: #ff5e14; /* MeetWithOurLeaders component */
-  --color-custom-safe-work-bg: #1f2937; /* SafeWorkEnvironment component */
-  --color-custom-success-bg: rgba(255, 255, 255, 0.8); /* SuccessCount component */
-  --color-custom-testimonial-bg: #f4f7fb; /* Testimonial component */
-  --color-custom-ensure-quality-bg: #f4f7fb; /* WeEnsureQuality component */
-  --color-custom-breadcrumb-bg: rgba(65, 65, 65, 0.4); /* Breadcrumb component */
-  --color-custom-footer-page-bg: #041436; /* Footer component in Pages */
-  --color-custom-footer-page-text: rgba(255, 255, 255, 0.8); /* Footer component in Pages */
-  --color-custom-footer-page-input-bg: rgba(255, 255, 255, 0.1); /* Footer component in Pages */
-  --color-custom-glance-border: #676e7c; /* SuccessGlance component */
-  --color-custom-sustainable-piller-bg: #231F20; /* SustainabilityPillers component */
-  --color-custom-sustainable-roadmap-bg: #231F20; /* SustainabilityRoadmap component */
-  --color-custom-sustainable-roadmap-shadow: rgba(0, 0, 0, 0.7); /* SustainabilityRoadmap component */
-  --color-custom-sustainable-bg: #000000; /* Sustainable component */
-  --color-custom-accessories-bg: #231F20; /* SustainAccesories component */
-  --color-custom-project-overlay: rgba(65, 65, 65, 0.74); /* TopProjects component */
-  --color-custom-transparency-bg: #1f2937; /* TranceparancySection component */
-  --color-custom-value-addition-bg: #000000; /* ValueAddition component */
-  --color-custom-washing-bg: #111827; /* WashingPeceDyed component */
-  --color-custom-easy-border: #ff5e14; /* MakeThingEasy component */
-  --color-custom-welcome-bg: #041436; /* WelcomeToStyleMuseum component */
-  --color-custom-best-overlay: rgba(65, 65, 65, 0.74); /* WhyWeAreBest component */
+  --color-custom-red: #dc2626;
+  --color-custom-dark-gray: #231F20;
+  --color-custom-green: #22c55e;
+  --color-custom-dark-slate: #1f2937;
+  --color-custom-light-slate: #374151;
+  --color-custom-link-red: #ef4444;
+  --color-custom-dark-blue: #041436;
+  --color-custom-light-blue: #f4f7fb;
+  --color-custom-dark-red: #b91c1c;
+  --color-custom-black: #000000;
+  --color-custom-footer-border: #676e7c;
+  --color-custom-hover-red: #ff5e14;
+  --color-custom-team-border: #ffffff;
+  --color-custom-nav-bg: linear-gradient(65deg,theme(colors.text.White)_35%,theme(colors.background)_30%);
+  --color-custom-nav-mobile-bg: linear-gradient(65deg,theme(colors.text.White)_65%,theme(colors.background)_30%);
+  --color-custom-nav-md-bg: linear-gradient(65deg,theme(colors.text.White)_70%,theme(colors.background)_30%);
+  --color-custom-client-bg: #ffffff;
+  --color-custom-client-border: #e5e7eb;
+  --color-custom-dept-border: #ff5e14;
+  --color-custom-strength-bg: #231F20;
+  --color-custom-service-layer: rgba(65, 65, 65, 0.5);
+  --color-custom-how-work-border: #ff5e14;
+  --color-custom-leader-bg: #ffffff;
+  --color-custom-leader-border: rgba(0, 0, 0, 0.1);
+  --color-custom-leader-hover-bg: #ff5e14;
+  --color-custom-safe-work-bg: #1f2937;
+  --color-custom-success-bg: rgba(255, 255, 255, 0.8);
+  --color-custom-testimonial-bg: #f4f7fb;
+  --color-custom-ensure-quality-bg: #f4f7fb;
+  --color-custom-breadcrumb-bg: rgba(65, 65, 65, 0.4);
+  --color-custom-footer-page-bg: #041436;
+  --color-custom-footer-page-text: rgba(255, 255, 255, 0.8);
+  --color-custom-footer-page-input-bg: rgba(255, 255, 255, 0.1);
+  --color-custom-glance-border: #676e7c;
+  --color-custom-sustainable-piller-bg: #231F20;
+  --color-custom-sustainable-roadmap-bg: #231F20;
+  --color-custom-sustainable-roadmap-shadow: rgba(0, 0, 0, 0.7);
+  --color-custom-sustainable-bg: #000000;
+  --color-custom-accessories-bg: #231F20;
+  --color-custom-project-overlay: rgba(65, 65, 65, 0.74);
+  --color-custom-transparency-bg: #1f2937;
+  --color-custom-value-addition-bg: #000000;
+  --color-custom-washing-bg: #111827;
+  --color-custom-easy-border: #ff5e14;
+  --color-custom-welcome-bg: #041436;
+  --color-custom-best-overlay: rgba(65, 65, 65, 0.74);
 
   /* Shadow */
   --shadow-section: 0 4px 10px rgba(0, 0, 0, 0.1);

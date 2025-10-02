@@ -81,11 +81,11 @@ const Marquee = ({ items, direction = "left" }) => {
         {duplicatedItems.map((item, index) => (
           <div
             key={`${direction}-${item.id}-${index}`}
-            className="flex flex-col bg-gray-800 rounded-xl overflow-hidden w-72 h-[420px] flex-shrink-0 mx-4 group"
+            className="flex flex-col bg-custom-dark-slate rounded-xl overflow-hidden w-72 h-[420px] flex-shrink-0 mx-4 group"
           >
             <div className="p-4 text-center h-16 flex items-center justify-center">
               <h3
-                className="text-white font-semibold text-lg truncate"
+                className="text-text-White font-semibold text-lg truncate"
                 title={item.title}
               >
                 {item.title}
@@ -125,9 +125,9 @@ const features = [
 // --- MAIN COMPONENT ---
 const WashingPeceDyed = () => {
   return (
-    <div className="bg-gray-900 text-white font-sans overflow-hidden">
+    <div className="bg-custom-washing-bg text-text-White font-sans overflow-hidden">
       <div className="container mx-auto px-4 py-20 md:py-28">
-        <h1 className="text-4xl md:text-5xl font-extrabold uppercase text-white text-center mb-16">
+        <h1 className="text-4xl md:text-5xl font-extrabold uppercase text-text-White text-center mb-16">
           WASHING/ PIECE DYED
         </h1>
 
