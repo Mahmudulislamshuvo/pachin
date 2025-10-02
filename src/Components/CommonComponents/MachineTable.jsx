@@ -154,8 +154,8 @@ const MachineTable = () => {
   }, 0);
 
   return (
-    <div className=" p-4 sm:p-6 md:p-8 font-sans">
-      <div className="max-w-7xl mx-auto">
+    <div className=" p-4 sm:p-6 md:p-8">
+      <div className="container">
         {/* Main Title Bar */}
         <h2 className="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-text-Primary md:text-6xl">
           AUTOMATE CUTTING AND PRINTING{" "}
@@ -163,7 +163,7 @@ const MachineTable = () => {
         </h2>
 
         {/* Responsive Table Wrapper */}
-        <div className="overflow-x-auto shadow-md relative">
+        <div className="overflow-x-auto shadow-box-shadow relative">
           {/* Background Image */}
           <img
             src={background}
@@ -174,9 +174,9 @@ const MachineTable = () => {
           <div className="absolute z-0"></div>
 
           {/* Table */}
-          <table className="w-full text-sm text-left text-zinc-200 relative z-10 backdrop-blur-md  rounded-lg overflow-hidden">
+          <table className="w-full text-sm text-left text-zink relative z-10 backdrop-blur-md  rounded-8px overflow-hidden">
             {/* Table Header */}
-            <thead className="text-xs text-white uppercase ">
+            <thead className="text-xs text-text-White uppercase ">
               <tr>
                 <th scope="col" className="px-6 py-3 text-center">
                   SI
@@ -201,7 +201,7 @@ const MachineTable = () => {
               {machineData.map((machine) => (
                 <tr
                   key={machine.si}
-                  className="bg-zinc-900/70 border-b border-zinc-700 hover:bg-zinc-700/70 transition-colors duration-200"
+                  className="bg-zink900/70 border-b border-zink700 hover:bg-zink700/70 transition-colors duration-200"
                 >
                   <td className="px-6 py-4 text-center font-medium">
                     {machine.si}
@@ -218,7 +218,7 @@ const MachineTable = () => {
 
             {/* Table Footer */}
             <tfoot>
-              <tr className="font-semibold text-white bg-zinc-800/80">
+              <tr className="font-semibold text-text-White bg-zink700/80">
                 <td
                   colSpan="4"
                   className="px-6 py-4 text-right text-base uppercase"

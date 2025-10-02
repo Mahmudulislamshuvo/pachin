@@ -55,7 +55,7 @@ const contributionData = [
 
 const ContributionBluePlanet = () => {
   return (
-    <div className="bg-text-Primary/90 py-20">
+    <div className="bg-custom-dark-blue/90 py-20">
       <div className="container">
         <h2 className="mb-8 lg:mb-16 text-3xl font-bold tracking-tight leading-tight text-center text-text-White md:text-6xl">
           CONTRIBUTION <span className="text-background">TO BLUE PLANET</span>

@@ -10,12 +10,12 @@ const WhatsAppButton = () => {
         className="group relative flex items-center"
       >
         {/* WhatsApp button */}
-        <div className="flex items-center justify-center w-14 h-14 bg-green-500 rounded-full shadow-lg hover:bg-green-600 animate-pulse transition-all">
-          <FaWhatsapp className="text-white text-3xl" />
+        <div className="flex items-center justify-center w-14 h-14 bg-custom-green rounded-full shadow-lg hover:bg-custom-green animate-pulse transition-all">
+          <FaWhatsapp className="text-text-White text-3xl" />
         </div>
 
         {/* Popup number on hover */}
-        <span className="absolute right-16 bg-green-500 text-white font-semibold px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 scale-0 group-hover:scale-100 transition-all duration-300 shadow-lg">
+        <span className="absolute right-16 bg-custom-green text-text-White font-semibold px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 scale-0 group-hover:scale-100 transition-all duration-300 shadow-lg">
           +880167226810
         </span>
       </a>

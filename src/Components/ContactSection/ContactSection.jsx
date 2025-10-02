@@ -63,7 +63,7 @@ const socialLinks = [
 
 const ContactSection = () => {
   return (
-    <div className="bg-gray-800 text-white font-sans py-16 px-4">
+    <div className="bg-custom-dark-slate text-text-White font-sans py-16 px-4">
       <div className="container mx-auto">
         {/* Header Section */}
         <header className="text-center mb-12">
@@ -75,7 +75,7 @@ const ContactSection = () => {
           </h1>
           <a
             href="http://www.style-museum.com"
-            className="text-2xl text-red-500 font-semibold tracking-wide"
+            className="text-2xl text-custom-red font-semibold tracking-wide"
           >
             www.style-museum.com
           </a>
@@ -84,11 +84,11 @@ const ContactSection = () => {
         {/* Main Content: Card and Map */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Left Side: Contact Card */}
-          <div className="bg-gray-700 p-8 rounded-3xl shadow-lg">
+          <div className="bg-custom-light-slate p-8 rounded-3xl shadow-lg">
             {/* Contact Details */}
             <div className="mb-10">
               <h2 className="text-2xl font-bold mb-2">Contact Details:</h2>
-              <p className="text-gray-300 text-lg">
+              <p className="text-text-SecondaryTwo text-lg">
                 282/2DobadiaSignboard,Uttarkhan, <br />
                 Dhaka-1230
               </p>
@@ -104,9 +104,9 @@ const ContactSection = () => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center text-gray-300 hover:text-red-400 transition-colors"
+                    className="flex items-center text-text-SecondaryTwo hover:text-custom-link-red transition-colors"
                   >
-                    <div className="text-red-500 mr-3">{link.icon}</div>
+                    <div className="text-custom-red mr-3">{link.icon}</div>
                     <span className="truncate">{link.url}</span>
                   </a>
                 ))}

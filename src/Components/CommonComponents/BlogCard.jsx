@@ -28,18 +28,18 @@ const BlogCard = ({
               className="w-12 h-12 rounded-24px object-cover mr-4 border-2 border-text-White shadow-box-shadow"
             />
             <div>
-              <p className="font-bold text-gray-800 text-lg">{authorName}</p>
-              <p className="text-sm text-gray-500">by Admin | {postDate}</p>
+              <p className="font-bold text-text-Primary text-lg">{authorName}</p>
+              <p className="text-sm text-text-Secondary">by Admin | {postDate}</p>
             </div>
           </div>
 
           {/* Post Title */}
-          <h2 className="font-bold text-xl text-gray-900 mb-3 leading-tight">
+          <h2 className="font-bold text-xl text-text-Primary mb-3 leading-tight">
             {title}
           </h2>
 
           {/* Post Description */}
-          <p className="text-gray-600 mb-6">{description}</p>
+          <p className="text-text-Secondary mb-6">{description}</p>
 
           {/* Read More Link */}
           <a

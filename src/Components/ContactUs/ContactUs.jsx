@@ -5,14 +5,14 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px] dark:bg-dark">
+    <section className="relative z-10 overflow-hidden bg-text-White py-20 lg:py-[120px] dark:bg-text-black">
       <div className="container">
         <div className="md:flex justify-between">
           {/* Left Side - Form */}
           <div
             className={`w-full md:w-[55%] px-10 py-15 bg-text-White shadow-section`}
           >
-            <div className="relative rounded-8px bg-text-White dark:bg-dark-2">
+            <div className="relative rounded-8px bg-text-White dark:bg-text-black">
               <div className="pb-10">
                 <h4 className="text-3xl text-text-Primary font-bold">
                   Ready to Start Your Project?
@@ -83,13 +83,13 @@ const ContactUs = () => {
           {/* Right Side - Contact Info */}
           <div className="w-full md:w-[45%] px-8 py-10 bg-background text-text-White">
             <div className="mb-12 max-w-[570px] lg:mb-0">
-              <span className="mb-4 block text-base font-semibold text-primary">
+              <span className="mb-4 block text-base font-semibold text-background">
                 Contact Us
               </span>
-              <h2 className="mb-6 text-[32px] font-bold uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px] dark:text-white">
+              <h2 className="mb-6 text-[32px] font-bold uppercase text-text-Primary sm:text-[40px] lg:text-[36px] xl:text-[40px] dark:text-text-White">
                 Let's Create Something Beautiful
               </h2>
-              <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
+              <p className="mb-9 text-base leading-relaxed text-text-Secondary dark:text-text-Secondary">
                 We're passionate about creating beautiful and functional spaces. Contact us today to learn more about how we can help you bring your vision to life.
               </p>
             </div>

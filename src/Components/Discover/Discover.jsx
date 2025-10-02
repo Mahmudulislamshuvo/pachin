@@ -5,14 +5,14 @@ import kidsClothingImage from "../../assets/Images/menufec_third.png";
 
 const ManufacturingExperience = () => {
   return (
-    <section className="bg-white font-sans py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-text-White font-sans py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-red-600 tracking-wider uppercase">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-custom-red tracking-wider uppercase">
             Manufacturing Experience
           </h2>
-          <p className="mt-4 text-xl text-gray-600 tracking-wide">
+          <p className="mt-4 text-xl text-text-Secondary tracking-wide">
             WHAT WE PRODUCE FOR WHOM
           </p>
         </div>
@@ -21,8 +21,8 @@ const ManufacturingExperience = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16 text-center">
           {/* Men's Category */}
           <div className="flex flex-col items-center">
-            <FaMale className="text-[200px] text-gray-800" aria-hidden="true" />
-            <h3 className="mt-6 text-3xl font-semibold text-gray-900">Men's</h3>
+            <FaMale className="text-[200px] text-text-Primary" aria-hidden="true" />
+            <h3 className="mt-6 text-3xl font-semibold text-text-Primary">Men's</h3>
             <div className="mt-8">
               <img
                 src={mensClothingImage}
@@ -35,10 +35,10 @@ const ManufacturingExperience = () => {
           {/* Ladie's Category */}
           <div className="flex flex-col items-center">
             <FaFemale
-              className="text-[200px] text-red-600"
+              className="text-[200px] text-custom-red"
               aria-hidden="true"
             />
-            <h3 className="mt-6 text-3xl font-semibold text-gray-900">
+            <h3 className="mt-6 text-3xl font-semibold text-text-Primary">
               Ladie's
             </h3>
             <div className="mt-8">
@@ -53,10 +53,10 @@ const ManufacturingExperience = () => {
           {/* Kid's Category */}
           <div className="flex flex-col items-center">
             <FaChild
-              className="text-[200px] text-gray-800"
+              className="text-[200px] text-text-Primary"
               aria-hidden="true"
             />
-            <h3 className="mt-6 text-3xl font-semibold text-gray-900">Kid's</h3>
+            <h3 className="mt-6 text-3xl font-semibold text-text-Primary">Kid's</h3>
             <div className="mt-8">
               <img
                 src={kidsClothingImage}
