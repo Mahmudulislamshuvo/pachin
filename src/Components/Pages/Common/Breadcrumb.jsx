@@ -1,4 +1,4 @@
-const Breadcrumb = ({ image, title, setPage }) => {
+const Breadcrumb = ({ image, title }) => {
   return (
     <>
       <div className="relative w-full">
@@ -13,13 +13,13 @@ const Breadcrumb = ({ image, title, setPage }) => {
         <div className="relative z-10 flex flex-col items-center justify-center h-full bg-bannerLayer bg-opacity-40 py-40 px-5">
           <h1 className="text-7xl font-bold mb-4 text-text-White">{title}</h1>
           <div className="space-x-5 text-lg">
-            <button
+            {/* <button
               onClick={() => setPage("home")}
               className="text-text-White cursor-pointer"
             >
               Home
-            </button>
-            <button className="text-background">{title}</button>
+            </button> */}
+            {/* <button className="text-background">{title}</button> */}
           </div>
         </div>
       </div>

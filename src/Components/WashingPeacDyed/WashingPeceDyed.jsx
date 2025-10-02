@@ -8,6 +8,103 @@ import dyed7 from "../../assets/Images/dyed7.png";
 import dyed8 from "../../assets/Images/dyed8.png";
 import dyed9 from "../../assets/Images/dyed9.png";
 
+import { useState, useRef, useEffect, useCallback } from "react";
+
+// This component contains all the logic for an interactive, auto-scrolling marquee.
+const Marquee = ({ items, direction = "left" }) => {
+  const marqueeRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const scrollLeftRef = useRef(0);
+  const animationFrameId = useRef(null);
+
+  const duplicatedItems = [...items, ...items, ...items];
+
+  const animateMarquee = useCallback(() => {
+    if (marqueeRef.current && !isDragging) {
+      const speed = direction === "left" ? -1 : 1;
+      scrollLeftRef.current += speed;
+
+      const marqueeWidth = marqueeRef.current.scrollWidth / 3;
+      if (direction === "left" && scrollLeftRef.current < -marqueeWidth) {
+        scrollLeftRef.current += marqueeWidth;
+      } else if (direction === "right" && scrollLeftRef.current > 0) {
+        scrollLeftRef.current -= marqueeWidth;
+      }
+      marqueeRef.current.style.transform = `translateX(${scrollLeftRef.current}px)`;
+    }
+    animationFrameId.current = requestAnimationFrame(animateMarquee);
+  }, [isDragging, direction]);
+
+  useEffect(() => {
+    animationFrameId.current = requestAnimationFrame(animateMarquee);
+    return () => cancelAnimationFrame(animationFrameId.current);
+  }, [animateMarquee]);
+
+  const handleDragStart = (e) => {
+    setIsDragging(true);
+    const pageX = e.type === "touchstart" ? e.targetTouches[0].pageX : e.pageX;
+    setStartX(pageX - scrollLeftRef.current);
+    if (marqueeRef.current) {
+      marqueeRef.current.style.cursor = "grabbing";
+    }
+  };
+
+  const handleDragMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const pageX = e.type === "touchmove" ? e.targetTouches[0].pageX : e.pageX;
+    const walk = pageX - startX;
+    scrollLeftRef.current = walk;
+    marqueeRef.current.style.transform = `translateX(${walk}px)`;
+  };
+
+  const handleDragEnd = () => {
+    setIsDragging(false);
+    if (marqueeRef.current) {
+      marqueeRef.current.style.cursor = "grab";
+    }
+  };
+
+  return (
+    <div
+      className="relative w-full overflow-hidden"
+      onMouseDown={handleDragStart}
+      onMouseMove={handleDragMove}
+      onMouseUp={handleDragEnd}
+      onMouseLeave={handleDragEnd}
+      onTouchStart={handleDragStart}
+      onTouchMove={handleDragMove}
+      onTouchEnd={handleDragEnd}
+    >
+      <div ref={marqueeRef} className="flex cursor-grab">
+        {duplicatedItems.map((item, index) => (
+          <div
+            key={`${direction}-${item.id}-${index}`}
+            className="flex flex-col bg-gray-800 rounded-xl overflow-hidden w-72 h-[420px] flex-shrink-0 mx-4 group"
+          >
+            <div className="p-4 text-center h-16 flex items-center justify-center">
+              <h3
+                className="text-white font-semibold text-lg truncate"
+                title={item.title}
+              >
+                {item.title}
+              </h3>
+            </div>
+            <div className="flex-grow h-full overflow-hidden">
+              <img
+                src={item.imageUrl}
+                alt={item.title}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 pointer-events-none"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 // Data for the first slider (scrolls right to left)
 const projects = [
   { id: 1, title: "Modern Living Room", imageUrl: dyed1 },
@@ -28,137 +125,23 @@ const features = [
 // --- MAIN COMPONENT ---
 const WashingPeceDyed = () => {
   return (
-    <>
-      {/* Styles for the continuous scroll animation */}
-      <style>
-        {`
-                    @keyframes scroll-left {
-                        from { transform: translateX(0); }
-                        to { transform: translateX(-100%); }
-                    }
-                    .animate-left {
-                        animation: scroll-left 40s linear infinite;
-                    }
-                    @keyframes scroll-right {
-                        from { transform: translateX(-100%); }
-                        to { transform: translateX(0); }
-                    }
-                    .animate-right {
-                        animation: scroll-right 40s linear infinite;
-                    }
-                `}
-      </style>
+    <div className="bg-gray-900 text-white font-sans overflow-hidden">
+      <div className="container mx-auto px-4 py-20 md:py-28">
+        <h1 className="text-4xl md:text-5xl font-extrabold uppercase text-white text-center mb-16">
+          WASHING/ PIECE DYED
+        </h1>
 
-      <div className="bg-gray-900 text-white font-sans overflow-hidden">
-        <div className="container mx-auto px-4 py-20 md:py-28">
-          <h1 className="text-4xl md:text-5xl font-extrabold uppercase text-white text-center mb-10">
-            WASHING/ PIECE DYED
-          </h1>
+        {/* Slider 1: Scrolls from right to left */}
+        <div className="mb-10">
+          <Marquee items={projects} direction="left" />
+        </div>
 
-          {/* Slider 1: Scrolls from right to left using the 'projects' data */}
-          <div className="relative w-full overflow-hidden mb-10">
-            <div className="flex animate-left">
-              {/* We render the list twice for a seamless loop */}
-              {projects.map((project) => (
-                <div
-                  key={`p1-${project.id}`}
-                  className="flex flex-col bg-gray-800 rounded-xl overflow-hidden w-72 h-[420px] flex-shrink-0 mx-4 cursor-pointer group"
-                >
-                  <div className="p-4 text-center h-16 flex items-center justify-center">
-                    <h3
-                      className="text-white font-semibold text-lg truncate"
-                      title={project.title}
-                    >
-                      {project.title}
-                    </h3>
-                  </div>
-                  <div className="flex-grow h-full">
-                    <img
-                      src={project.imageUrl}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                </div>
-              ))}
-              {projects.map((project) => (
-                <div
-                  key={`p2-${project.id}`}
-                  className="flex flex-col bg-gray-800 rounded-xl overflow-hidden w-72 h-[420px] flex-shrink-0 mx-4 cursor-pointer group"
-                >
-                  <div className="p-4 text-center h-16 flex items-center justify-center">
-                    <h3
-                      className="text-white font-semibold text-lg truncate"
-                      title={project.title}
-                    >
-                      {project.title}
-                    </h3>
-                  </div>
-                  <div className="flex-grow h-full">
-                    <img
-                      src={project.imageUrl}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Slider 2: Scrolls from left to right using the 'features' data */}
-          <div className="relative w-full overflow-hidden">
-            <div className="flex animate-right">
-              {/* We render the list twice for a seamless loop */}
-              {features.map((feature) => (
-                <div
-                  key={`f1-${feature.id}`}
-                  className="flex flex-col bg-gray-800 rounded-xl overflow-hidden w-72 h-[420px] flex-shrink-0 mx-4 cursor-pointer group"
-                >
-                  <div className="p-4 text-center h-16 flex items-center justify-center">
-                    <h3
-                      className="text-white font-semibold text-lg truncate"
-                      title={feature.title}
-                    >
-                      {feature.title}
-                    </h3>
-                  </div>
-                  <div className="flex-grow h-full">
-                    <img
-                      src={feature.imageUrl}
-                      alt={feature.title}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                </div>
-              ))}
-              {features.map((feature) => (
-                <div
-                  key={`f2-${feature.id}`}
-                  className="flex flex-col bg-gray-800 rounded-xl overflow-hidden w-72 h-[420px] flex-shrink-0 mx-4 cursor-pointer group"
-                >
-                  <div className="p-4 text-center h-16 flex items-center justify-center">
-                    <h3
-                      className="text-white font-semibold text-lg truncate"
-                      title={feature.title}
-                    >
-                      {feature.title}
-                    </h3>
-                  </div>
-                  <div className="flex-grow h-full">
-                    <img
-                      src={feature.imageUrl}
-                      alt={feature.title}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* Slider 2: Scrolls from left to right */}
+        <div>
+          <Marquee items={features} direction="right" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

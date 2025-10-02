@@ -16,7 +16,7 @@ const Banner = () => {
           <div className="container">
             <div className="text-center py-40 md:py-80 px-5 md:px-0">
               <h1 className="text-text-White text-2xl md:text-6xl font-bold px-6 md:px-0">
-                STYLE WITH QUALITY CLOUTHING
+                STYLE WITH QUALITY CLOTHING
                 <br />
                 <span className="text-background pl-3">Since 2013</span>
               </h1>

@@ -15,7 +15,7 @@ import singapore from "../../assets/Images/singapore.png";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 
 const OurClients = () => {
@@ -47,18 +47,19 @@ const OurClients = () => {
           </h2>
 
           <Swiper
-            modules={[Autoplay]}
+            modules={[Autoplay, FreeMode]}
             spaceBetween={30}
             slidesPerView={"auto"}
             loop={true}
             speed={3000}
             autoplay={{
               delay: 0,
-              disableOnInteraction: false,
-              reverseDirection: true,
+              disableOnInteraction: false, // autoplay keeps running after drag
+              reverseDirection: true, // scrolls right-to-left
             }}
-            freeMode={false}
-            allowTouchMove={false}
+            freeMode={true} // ✅ allows smooth manual sliding
+            allowTouchMove={true} // ✅ enable drag/swipe
+            grabCursor={true} // nice cursor when dragging
           >
             {brandLogos.map((item) => (
               <SwiperSlide key={item.id} style={{ width: "auto" }}>
@@ -83,7 +84,7 @@ const OurClients = () => {
           </h2>
 
           <Swiper
-            modules={[Autoplay]}
+            modules={[Autoplay, FreeMode]}
             spaceBetween={150}
             slidesPerView={"auto"}
             loop={true}
@@ -92,8 +93,9 @@ const OurClients = () => {
               delay: 0,
               disableOnInteraction: false,
             }}
-            freeMode={false}
-            allowTouchMove={false}
+            freeMode={true}
+            allowTouchMove={true}
+            grabCursor={true}
           >
             {countryLogos.map((item) => (
               <SwiperSlide key={item.id} style={{ width: "auto" }}>
