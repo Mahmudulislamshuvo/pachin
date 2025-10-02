@@ -18,7 +18,8 @@ const ContactUs = () => {
                   Ready to Start Your Project?
                 </h4>
                 <p className="text-lg text-text-Secondary pt-3">
-                  Fill out the form below and one of our experts will be in touch to schedule a free consultation.
+                  Fill out the form below and one of our experts will be in
+                  touch to schedule a free consultation.
                 </p>
               </div>
 
@@ -61,11 +62,7 @@ const ContactUs = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="space-x-2">
-                    <input
-                      name="checkbox"
-                      id="checkbox"
-                      type="checkbox"
-                    />
+                    <input name="checkbox" id="checkbox" type="checkbox" />
                     <label htmlFor="checkbox" className="text-text-Primary">
                       Also subscribe us
                     </label>
@@ -89,8 +86,10 @@ const ContactUs = () => {
               <h2 className="mb-6 text-[32px] font-bold uppercase text-text-Primary sm:text-[40px] lg:text-[36px] xl:text-[40px] dark:text-text-White">
                 Let's Create Something Beautiful
               </h2>
-              <p className="mb-9 text-base leading-relaxed text-text-Secondary dark:text-text-Secondary">
-                We're passionate about creating beautiful and functional spaces. Contact us today to learn more about how we can help you bring your vision to life.
+              <p className="mb-9 text-base leading-relaxed text-text-White">
+                We're passionate about creating beautiful and functional spaces.
+                Contact us today to learn more about how we can help you bring
+                your vision to life.
               </p>
             </div>
           </div>
