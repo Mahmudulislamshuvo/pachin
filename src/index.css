@@ -5,7 +5,7 @@
   --color-text-White: #fff;
   --color-text-Primary: #041436;
   --color-text-Secondary: #676e7c;
-  --color-text-SecondaryTwo: #8a909c
+  --color-text-SecondaryTwo: #8a909c;
   --color-text-Star: #ff9529;
   --color-text-black: #000;
   --color-bannerLayer: rgba(65, 65, 65, 0.74);
@@ -23,7 +23,7 @@
 
   /* Custom colors */
   --color-custom-red: #dc2626;
-  --color-custom-dark-gray: #231F20;
+  --color-custom-dark-gray: #231f20;
   --color-custom-green: #22c55e;
   --color-custom-dark-slate: #1f2937;
   --color-custom-light-slate: #374151;
@@ -35,13 +35,25 @@
   --color-custom-footer-border: #676e7c;
   --color-custom-hover-red: #ff5e14;
   --color-custom-team-border: #ffffff;
-  --color-custom-nav-bg: linear-gradient(65deg,theme(colors.text.White)_35%,theme(colors.background)_30%);
-  --color-custom-nav-mobile-bg: linear-gradient(65deg,theme(colors.text.White)_65%,theme(colors.background)_30%);
-  --color-custom-nav-md-bg: linear-gradient(65deg,theme(colors.text.White)_70%,theme(colors.background)_30%);
+  --color-custom-nav-bg: linear-gradient(
+    65deg,
+    theme(colors.text.White) _35%,
+    theme(colors.background) _30%
+  );
+  --color-custom-nav-mobile-bg: linear-gradient(
+    65deg,
+    theme(colors.text.White) _65%,
+    theme(colors.background) _30%
+  );
+  --color-custom-nav-md-bg: linear-gradient(
+    65deg,
+    theme(colors.text.White) _70%,
+    theme(colors.background) _30%
+  );
   --color-custom-client-bg: #ffffff;
   --color-custom-client-border: #e5e7eb;
   --color-custom-dept-border: #ff5e14;
-  --color-custom-strength-bg: #231F20;
+  --color-custom-strength-bg: #231f20;
   --color-custom-service-layer: rgba(65, 65, 65, 0.5);
   --color-custom-how-work-border: #ff5e14;
   --color-custom-leader-bg: #ffffff;
@@ -56,11 +68,11 @@
   --color-custom-footer-page-text: rgba(255, 255, 255, 0.8);
   --color-custom-footer-page-input-bg: rgba(255, 255, 255, 0.1);
   --color-custom-glance-border: #676e7c;
-  --color-custom-sustainable-piller-bg: #231F20;
-  --color-custom-sustainable-roadmap-bg: #231F20;
+  --color-custom-sustainable-piller-bg: #231f20;
+  --color-custom-sustainable-roadmap-bg: #231f20;
   --color-custom-sustainable-roadmap-shadow: rgba(0, 0, 0, 0.7);
   --color-custom-sustainable-bg: #000000;
-  --color-custom-accessories-bg: #231F20;
+  --color-custom-accessories-bg: #231f20;
   --color-custom-project-overlay: rgba(65, 65, 65, 0.74);
   --color-custom-transparency-bg: #1f2937;
   --color-custom-value-addition-bg: #000000;
